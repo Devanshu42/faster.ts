@@ -1,0 +1,30 @@
+<form>
+    <div class="shift_middle">    
+    
+    <label for="cptp">Crop Type</label>
+    <select  name="cptp" [(ngModel)]="obj.croptype" class="padding_textbox" (click)="onselectcroptype()" >
+        <option [value]="undefined" selected >Select Crop Type</option>
+        <option *ngFor="let type of crop_typelist">{{type}}</option>
+      </select><br><br>
+    <!--[value]="undefined" is used to set default option in the drop down list-->
+      <label for="cpname">Crop Name  </label>
+      <select  name="cpname" [(ngModel)]="obj.cropname" class="padding_cropname"  >
+        <option [value]="undefined">Select Crop Name</option>
+        <option *ngFor="let name of crop_names" >{{name}}</option>
+      </select><br><br>
+    
+      <label for="fertype">Fertilizer Type  </label>
+      <select  name="fertype" class="padding_fertlizer" [(ngModel)]="obj.fertype" >
+        <option [value]="undefined" >Select Fertilizer Name</option>
+        <option  *ngFor="let name of fertilizer_name" >{{name}}</option>
+      </select><br><br>
+    
+      <label for="qua">Quantity  </label>
+      <input name="qua" type="number" placeholder="Enter Quantity" class="padding_quantity" [(ngModel)]="obj.quantity"><br><br>
+    
+      <label for="soilph">Soil PH Certificate  </label>
+      <input name="soilph" type="text" placeholder="Enter PH Value" class="padding_ph" [(ngModel)]="obj.phvalue"><br><br>
+    
+      <button class="placebutton"  type="button">Place Request</button>
+      </div>
+      </form>

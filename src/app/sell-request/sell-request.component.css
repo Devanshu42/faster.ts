@@ -1,0 +1,46 @@
+.shift_middle{
+    margin-left: 30%;
+    margin-top: 10%;
+    font-size: large; 
+}
+.padding_textbox{
+    padding: 0.7%;
+    width: 31.5%;
+    height: 10%;
+    font-size: medium;
+    margin-left: 10%;
+}
+.placebutton{
+    padding: 0.5%;
+    font-size: medium;
+    margin-left: 17.5%;   
+    margin-top: 4%; 
+    }
+    .padding_quantity{
+    padding: 0.7%;
+    width: 30%;
+    height: 10%;
+    font-size: medium;
+    margin-left: 10.6%;
+    }
+    .padding_ph{
+    padding: 0.7%;
+    width: 30.2%;
+    height: 10%;
+    font-size: medium;
+    margin-left: 3.6%;
+    }
+    .padding_fertlizer{
+        padding: 0.7%;
+        width: 31.7%;
+        height: 10%;
+        font-size: medium;
+        margin-left: 6.7%;
+    }
+    .padding_cropname{
+        padding: 0.7%;
+        width: 31.7%;
+        height: 10%;
+        font-size: medium;
+        margin-left: 8.8%;
+    }

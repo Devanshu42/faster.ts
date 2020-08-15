@@ -1,0 +1,18 @@
+table{
+    margin-top: 4%;
+    border-collapse: collapse;
+    width: 80%;
+    margin-left: 6%;
+}
+table,th,td{
+    border:1px solid black;
+}
+.bidamount{
+    margin-top: 2%;
+    margin-left: 36%;
+}
+.buttoncss{
+    padding: 0.3%;
+    margin-left: 43%;
+    margin-top: 2%;
+}

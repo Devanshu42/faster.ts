@@ -1,0 +1,25 @@
+div{
+    border:1px solid blue;
+    padding:7px;
+    width:800px;
+    margin: 10px auto;
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+}
+
+center{
+    text-align: center;
+}
+
+div.settings{
+    position: relative;
+    right: -540px;
+    top: -40px;
+}
+
+ .user{
+    margin-bottom: 1em;
+    border-radius: 2px;
+    border: 1px solid seagreen;
+}

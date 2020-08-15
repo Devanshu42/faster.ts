@@ -1,0 +1,17 @@
+.current{
+    text-align: center;
+    color:darkorange;
+}
+.h1{
+    text-align: center;
+    color: blue;
+}
+.crop
+{
+    color: darkorchid;
+    background-color: floralwhite;
+}
+.previous{
+    color: rgb(241, 177, 3);
+    background-color: rgb(238, 233, 232);
+}

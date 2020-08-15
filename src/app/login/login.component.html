@@ -1,0 +1,20 @@
+<form #Registerform="ngForm">  
+  <h2 style="text-align: center;">Login to your account!</h2>
+    <div class="shift_middle">
+      <label for="email"><b>Email</b></label><br>
+      <small class="danger" *ngIf="email.touched && email.invalid">Please enter Email</small><br>
+      <input class="padding_textbox" type="text" placeholder="Enter Email" name="email" [(ngModel)]="obj.email" #email="ngModel" required>
+      <br><br>
+
+      <label  for="psw"><b>Password</b></label><br>
+      <small  class="danger" *ngIf="password.touched && password.invalid">Please enter Password</small><br>
+      <input class="padding_textbox" type="password" placeholder="Enter Password" name="psw" [(ngModel)]="obj.password" #password="ngModel" required>
+      
+      <br><br>  <button class="loginbutton" routerLink='/welcome-farmer'  type="button">Login</button>
+      <label class="marginforforgotpassword">Forgot Password?</label>
+    <br><br><br>
+    <div>
+      <label>New User?</label>&nbsp;&nbsp;&nbsp;<a routerLink="/select">Register Here</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+    </div>
+  </form>

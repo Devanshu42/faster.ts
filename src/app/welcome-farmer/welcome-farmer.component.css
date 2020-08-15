@@ -1,0 +1,77 @@
+.temp-header
+{
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 100%;
+  height: 4em;
+  margin-top: 0px;
+}
+
+.logout
+{
+  position: relative;
+  margin-right: 2%;
+  background-color: grey;
+  color: white;
+  border-radius: 3px;
+  float: right;
+  height: 100%;
+  width: max-content;
+  padding: 0 1em;
+  line-height: 64px;
+}
+
+.content
+{
+  position: relative;
+  background-color: dimgrey;
+  height: 50vh;
+  margin: 3% 8%;
+  padding: 3em;
+  align-items: center;
+  text-align: center;
+}
+
+.farmer-welcome-card
+{
+  width: 47.5%;
+  float: left;
+  height: 50%;
+  background-color: black;
+  text-align: center;
+  display: block;
+  margin: 0 1em;
+  transition: 0.2s;
+}
+.farmer-welcome-card:hover
+{
+  transform: scale(1.1);
+  letter-spacing: 10px;
+}
+.market
+{
+  height: 50%;
+  width: 95%;
+  background-color: black;
+  margin: 1em 0;
+  text-align: center;
+  display: inline-block;
+  margin-right: 12px;
+  transition: 0.2s;
+}
+.market:hover
+{
+  transform: scale(1.1);
+  letter-spacing: 10px;
+}
+
+.text
+{
+  color: papayawhip;
+  font-size: 2.5em;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
