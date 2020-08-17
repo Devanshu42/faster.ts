@@ -26,9 +26,10 @@ font-size: large;
     
 }
 span{
-    border:1px solid blue;
+    border:1px solid black;
     padding:10px;
     width:800px;
+    background-color: darkgrey;
     padding-bottom: 3%;
     padding-top: 3%;
     margin: 10px auto;

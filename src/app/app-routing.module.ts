@@ -11,6 +11,7 @@ import { SellRequestComponent} from './sell-request/sell-request.component';
 import { WelcomeFarmerComponent } from './welcome-farmer/welcome-farmer.component';
 import { SellHistoryComponent } from './sell-history/sell-history.component';
 import { WelcomeBidderComponent } from './welcome-bidder/welcome-bidder.component';
+import { ForgetComponent } from './forget/forget.component';
 
 
 const routes: Routes = [
@@ -21,6 +22,7 @@ const routes: Routes = [
   {path:'farmer-login', component:FarmerLoginComponent},
   {path:'bidder-login', component:BidderLoginComponent},
   {path:'market', component:ViewMarketComponent},
+  {path:'forget', component:ForgetComponent},
   {path:'sell-request',component:SellRequestComponent},
   {path:'welcome-farmer', component:WelcomeFarmerComponent},
   {path:'sell-history', component:SellHistoryComponent},

@@ -11,7 +11,7 @@
       <input class="padding_textbox" type="password" placeholder="Enter Password" name="psw" [(ngModel)]="obj.password" #password="ngModel" required>
       
       <br><br>  <button class="loginbutton" routerLink='/welcome-farmer'  type="button">Login</button>
-      <label class="marginforforgotpassword">Forgot Password?</label>
+      <label class="marginforforgotpassword"><a routerLink="/forget">Forgot Password?</a></label>
     <br><br><br>
     <div>
       <label>New User?</label>&nbsp;&nbsp;&nbsp;
@@ -21,6 +21,8 @@
       <span *ngIf="appear">
         <button routerLink='/farmer-login' class="loginbutton">Farmer Registration</button>&nbsp;&nbsp;&nbsp;
         <button routerLink='/bidder-login' class="loginbutton">Bidder Registration</button>&nbsp;&nbsp;&nbsp;
+        <button (click)="appear=flase" class="loginbutton">Hide</button>&nbsp;&nbsp;&nbsp;
+
       </span>
     </div>
     </div>

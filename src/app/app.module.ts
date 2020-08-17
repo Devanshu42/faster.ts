@@ -15,6 +15,7 @@ import { WelcomeBidderComponent } from './welcome-bidder/welcome-bidder.componen
 import { SellHistoryComponent } from './sell-history/sell-history.component';
 import { SellRequestComponent } from './sell-request/sell-request.component';
 import { AgGridModule } from 'ag-grid-angular';
+import { ForgetComponent } from './forget/forget.component';
 
 
 
@@ -31,7 +32,8 @@ import { AgGridModule } from 'ag-grid-angular';
     WelcomeFarmerComponent,
     WelcomeBidderComponent,
     SellHistoryComponent,
-    SellRequestComponent
+    SellRequestComponent,
+    ForgetComponent
   ],
   imports: [
     BrowserModule,
