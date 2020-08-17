@@ -11,6 +11,7 @@ export class LoginComponent implements OnInit {
 
   constructor() { }
   obj=new cropdetails();
+  appear=false;
 
   ngOnInit(): void {
   }

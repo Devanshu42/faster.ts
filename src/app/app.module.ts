@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
-import { LoginselectComponent } from './loginselect/loginselect.component';
+// import { LoginselectComponent } from './loginselect/loginselect.component';
 import { FarmerLoginComponent } from './farmer-login/farmer-login.component';
 import { BidderLoginComponent } from './bidder-login/bidder-login.component';
 import { NotfoundComponent } from './notfound/notfound.component';
@@ -23,7 +23,7 @@ import { AgGridModule } from 'ag-grid-angular';
     AppComponent,
     HomeComponent,
     LoginComponent,
-    LoginselectComponent,
+    // LoginselectComponent,
     FarmerLoginComponent,
     BidderLoginComponent,
     NotfoundComponent,
