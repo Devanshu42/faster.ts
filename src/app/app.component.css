@@ -39,8 +39,8 @@
 .menu-item
 {
   color: white;
-  font-family: Verdana;
-  font-size: 1em;
+  font-family: Futura;
+  font-size: 1.1em;
   width: 25%;
   float: left;
   text-align: center;
@@ -58,21 +58,21 @@
 {
   color:black;
   background-color: white;
-  font-family: Verdana ;
+  font-family: Futura ;
   width: max-content;
   float: right;
   text-align: center;
   border-radius: 40px;
   transition: 0.3s;
   overflow: hidden;
-  padding: 1% 2.5%;
+  padding: 1% 4%;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .login:hover
 {
-  background-color: dimgray;
+  background-color: #cc5f30;
   color:white;
   transform: scale(1.1);
   opacity: 1;
