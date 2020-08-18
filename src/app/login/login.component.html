@@ -14,10 +14,7 @@
       <label class="marginforforgotpassword"><a routerLink="/forget">Forgot Password?</a></label>
     <br><br><br>
     <div>
-      <label>New User?</label>&nbsp;&nbsp;&nbsp;
-      
-      <button (click)="appear=true" class="loginbutton">Register Here</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
+      <label (click)="appear=true" >New User? Register Here</label>&nbsp;&nbsp;&nbsp;
       <span *ngIf="appear">
         <button routerLink='/farmer-registration' class="loginbutton">Farmer Registration</button>&nbsp;&nbsp;&nbsp;
         <button routerLink='/bidder-registration' class="loginbutton">Bidder Registration</button>&nbsp;&nbsp;&nbsp;
