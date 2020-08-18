@@ -1,4 +1,9 @@
 <div class="header" id = "myHeader">
+<!--  <div class = "logo" id = "logo">-->
+<!--    <a routerLink='/'>-->
+<!--      <img src="../assets/logo2.png" >-->
+<!--    </a>-->
+<!--  </div>-->
     <div class="logo-text" >
       <a routerLink='/' style="color: inherit; text-decoration: none; height: 100%">
         Mr. Farmer
@@ -14,7 +19,7 @@
 
       <div class="menu-item">
         <a routerLink='/market' style="color: inherit; text-decoration: none; display: block; height: 100%">
-          MarketPlace
+          About Us
         </a>
       </div>
 
@@ -24,23 +29,13 @@
         </a>
       </div>
 
-      <div class="spacer">
-
-      </div>
 
       <div class="login">
         <a [routerLink]="['/login']" style="color:inherit; text-decoration: none; display: block; height: 100%">
           Login
-          <img src="../assets/login-icon.png" height="65%" width="19%" style="position:relative; top: 7px">
         </a>
 
       </div>
     </div>
-  </div>
-
-  <div class = "logo" id = "logo">
-    <a routerLink='/'>
-      <img src="../assets/logo2.png" >
-    </a>
   </div>
 <router-outlet></router-outlet>

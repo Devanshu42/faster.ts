@@ -1,33 +1,25 @@
 .header
 {
-  height: 9%;
+  height: 8%;
   display: flex;
   align-items: center;
   color: white;
   font-weight: 600;
-  background: rgb(73, 69, 114);
-}
-
-.spacer
-{
-  height: 100%;
-  width: 3%;
-  float: left;
+  background: rgb(33,33,33);
+  min-width: 600px;
+  min-height: 60px;
 }
 
 .logo
 {
-  position: relative;
-  top: 0;
-  left: 0.5%;
-  width: 4.16%;
-  height: 7%;
+  top: 1%;
 }
 
 .logo-text
 {
   position: relative;
-  left: 12.75%;
+  display: inline;
+  left: 3%;
   top: 6.5%;
   color: white;
   font-size: 240%;
@@ -38,50 +30,49 @@
 
 .menu-tray
 {
-  position: relative;
-  left: 45%;
-  width: 39.3%;
-  height: 78%;
+  margin-left: auto;
+  margin-right: 1%;
+  display: inline;
+  width: 28%;
+  min-width: 400px;
 }
 .menu-item
 {
   color: white;
-  font-family: Verdana ;
-  font-size: 100%;
-  height: 100%;
-  width: 24%;
+  font-family: Verdana;
+  font-size: 1em;
+  width: 25%;
   float: left;
   text-align: center;
-  line-height: 320%;
   transition: 0.3s;
+  display: inline;
+  padding: 0.8% 0 0%;
 }
 .menu-item:hover
 {
   transform: scale(1.1);
-  color: blueviolet;
+  color: coral;
 }
 
 .login
 {
-  position: inherit;
-  top: 15%;
   color:black;
   background-color: white;
-  opacity: 0.8;
   font-family: Verdana ;
-  font-size: 120%;
-  height: 70%;
-  width: 25%;
+  width: max-content;
   float: right;
   text-align: center;
-  line-height: 200%;
   border-radius: 40px;
   transition: 0.3s;
   overflow: hidden;
+  padding: 1% 2.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .login:hover
 {
-  background-color: slategrey;
+  background-color: dimgray;
   color:white;
   transform: scale(1.1);
   opacity: 1;
