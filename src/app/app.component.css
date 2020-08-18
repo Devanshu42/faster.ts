@@ -5,7 +5,7 @@
   align-items: center;
   color: white;
   font-weight: 600;
-  background: rgb(33,33,33);
+  background: rgb(73, 69, 114);;
   min-width: 600px;
   min-height: 60px;
 }
@@ -20,11 +20,11 @@
   position: relative;
   display: inline;
   left: 3%;
-  top: 6.5%;
+  /* top: 6.5%; */
   color: white;
-  font-size: 240%;
+  font-size: 200%;
   letter-spacing: 2px;
-  font-family: Futura;
+  /* font-family: tisa; */
   opacity: 100%;
 }
 
@@ -32,7 +32,7 @@
 {
   margin-left: auto;
   margin-right: 1%;
-  display: inline;
+  /* display: inline; */
   width: 28%;
   min-width: 400px;
 }
@@ -45,13 +45,13 @@
   float: left;
   text-align: center;
   transition: 0.3s;
-  display: inline;
+  /* display: inline; */
   padding: 0.8% 0 0%;
 }
 .menu-item:hover
 {
   transform: scale(1.1);
-  color: coral;
+  color: pink;
 }
 
 .login
@@ -61,6 +61,7 @@
   font-family: Futura ;
   width: max-content;
   float: right;
+  font-size:large;
   text-align: center;
   border-radius: 40px;
   transition: 0.3s;
@@ -72,7 +73,7 @@
 }
 .login:hover
 {
-  background-color: #cc5f30;
+  background-color: pink;
   color:white;
   transform: scale(1.1);
   opacity: 1;
