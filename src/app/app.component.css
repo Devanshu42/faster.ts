@@ -1,10 +1,6 @@
 .header
 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 10%;
+  height: 9%;
   display: flex;
   align-items: center;
   color: white;
