@@ -10,10 +10,11 @@ import { cropdetails } from '../cropdetails';
 export class LoginComponent implements OnInit {
 
   constructor() { }
-  obj=new cropdetails();
-  appear=false;
+  obj= new cropdetails();
+  appear= false;
 
-  ngOnInit(): void {
+  ngOnInit(): void
+  {
   }
 
 }
