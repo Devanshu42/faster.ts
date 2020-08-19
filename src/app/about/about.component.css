@@ -1,0 +1,34 @@
+.main
+{
+  background-color: #0f2f2f;
+  overflow: hidden;
+  padding-bottom: 5em;
+}
+.sub
+{
+  background-color: burlywood;
+}
+
+.heading
+{
+  font-family: Avenir;
+  font-weight: lighter;
+  padding: 3% 0;
+  text-align: center;
+  color: snow;
+  background-color: #0f2f2f;
+  font-size: 2.2em;
+}
+
+.content
+{
+  padding: 1% 30%;
+  text-align: justify;
+}
+
+p
+{
+  font-family: Verdana;
+  font-size: 1.2em;
+  color: #e0f2ff;
+}
