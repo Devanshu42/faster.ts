@@ -1,4 +1,4 @@
-<form #Registerform="ngForm" ngNativeValidate #form>
+<form #Registerform="ngForm">
   <div class="main">
     <h2>Login</h2>
     <div class="content">
@@ -16,13 +16,12 @@
 
       <div class="loginbutton" routerLink='/welcome-farmer'>LOGIN</div>
 
-        <br><br><br>
-        <label (click)="appear=true">New User? Click here to register.</label>&nbsp;&nbsp;&nbsp;
+        <br><br>
+        <label (click)="appear=true" >New User? Click here to register.</label>&nbsp;&nbsp;&nbsp;
         <div *ngIf="appear" class="extra">
           <div routerLink='/farmer-registration' class="extra-item">FARMER</div>&nbsp;&nbsp;&nbsp;
           <div routerLink='/bidder-registration' class="extra-item">BIDDER</div>&nbsp;&nbsp;&nbsp;
         </div>
     </div>
   </div>
-
 </form>
