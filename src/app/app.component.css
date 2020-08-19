@@ -1,6 +1,6 @@
 .header
 {
-  height: 8%;
+  height: 5em;
   display: flex;
   align-items: center;
   color: white;
@@ -12,15 +12,15 @@
 
 .logo
 {
-  top: 1%;
+  margin: 0.5% 0% 0 1%;
+  height: 100%;
 }
 
 .logo-text
 {
   position: relative;
   display: inline;
-  left: 3%;
-  /* top: 6.5%; */
+  margin: 0 0.5%;
   color: white;
   font-size: 200%;
   letter-spacing: 2px;
@@ -32,7 +32,6 @@
 {
   margin-left: auto;
   margin-right: 1%;
-  /* display: inline; */
   width: 28%;
   min-width: 400px;
 }
@@ -45,7 +44,6 @@
   float: left;
   text-align: center;
   transition: 0.3s;
-  /* display: inline; */
   padding: 0.8% 0 0%;
 }
 .menu-item:hover
@@ -58,22 +56,22 @@
 {
   color:black;
   background-color: white;
-  font-family: Futura ;
+  font-family: Futura;
   width: max-content;
   float: right;
   font-size:large;
   text-align: center;
   border-radius: 40px;
   transition: 0.3s;
-  overflow: hidden;
+  overflow: auto;
   padding: 1% 4%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*justify-content: center;*/
 }
 .login:hover
 {
-  background-color: pink;
+  background-color: #bb9099;
   color:white;
   transform: scale(1.1);
   opacity: 1;
