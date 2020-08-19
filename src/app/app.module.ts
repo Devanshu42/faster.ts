@@ -45,6 +45,6 @@ import { FooterComponent } from './footer/footer.component';
 
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, FooterComponent]
 })
 export class AppModule { }

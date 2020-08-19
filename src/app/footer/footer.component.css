@@ -161,3 +161,81 @@
 /*    font-weight:600*/
 /*  }*/
 /*}*/
+
+
+.main
+{
+  position: absolute;
+  bottom: 0;
+  margin-top: 15em;
+  background-color: black;
+  padding: 0 8%;
+  display: inline-block;
+}
+
+.about
+{
+  width: 50%;
+  min-width: 250px;
+  float: left;
+}
+
+.links
+{
+  text-align: right;
+  width: 20%;
+  float: right;
+  margin-bottom: 1em;
+}
+.item
+{
+  font-family: Verdana;
+  list-style-type: none;
+  color: #c9c9c9;
+  font-size: 1.1em;
+}
+
+.item:hover
+{
+  color: cornflowerblue;
+}
+p,h3
+{
+  font-family: Verdana;
+  color: #c9c9c9;
+}
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
