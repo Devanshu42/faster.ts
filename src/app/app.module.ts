@@ -17,6 +17,8 @@ import { SellRequestComponent } from './sell-request/sell-request.component';
 import { AgGridModule } from 'ag-grid-angular';
 import { ForgetComponent } from './forget/forget.component';
 import { FooterComponent } from './footer/footer.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 
@@ -35,7 +37,9 @@ import { FooterComponent } from './footer/footer.component';
     SellHistoryComponent,
     SellRequestComponent,
     ForgetComponent,
-    FooterComponent
+    FooterComponent,
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
@@ -45,6 +49,6 @@ import { FooterComponent } from './footer/footer.component';
 
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, FooterComponent]
 })
 export class AppModule { }

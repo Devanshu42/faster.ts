@@ -16,19 +16,19 @@ import { ForgetComponent } from './forget/forget.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
-  {path:'home', component:HomeComponent},
-  {path:'login', component:LoginComponent},
+  {path: 'home', component: HomeComponent},
+  {path: 'login', component: LoginComponent},
   // {path:'select',component:LoginselectComponent},
-  {path:'farmer-registration', component:FarmerLoginComponent},
-  {path:'bidder-registration', component:BidderLoginComponent},
-  {path:'market', component:ViewMarketComponent},
-  {path:'forget', component:ForgetComponent},
-  {path:'sell-request',component:SellRequestComponent},
-  {path:'welcome-farmer', component:WelcomeFarmerComponent},
-  {path:'sell-history', component:SellHistoryComponent},
-  {path:'bidder-welcome', component:WelcomeBidderComponent},
-  {path:'**',component:NotfoundComponent}
-  
+  {path: 'farmer-registration', component: FarmerLoginComponent},
+  {path: 'bidder-registration', component: BidderLoginComponent},
+  {path: 'market', component: ViewMarketComponent},
+  {path: 'forget', component: ForgetComponent},
+  {path: 'sell-request', component: SellRequestComponent},
+  {path: 'welcome-farmer', component: WelcomeFarmerComponent},
+  {path: 'sell-history', component: SellHistoryComponent},
+  {path: 'bidder-welcome', component: WelcomeBidderComponent},
+  {path: '**', component: NotfoundComponent}
+
 ];
 
 @NgModule({
