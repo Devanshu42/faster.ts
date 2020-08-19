@@ -1,65 +1,46 @@
-
-.logout
+.heading
 {
-  margin-right: 2%;
-  background-color: grey;
-  color: white;
-  border-radius: 3px;
-  float: right;
-  height: 100%;
-  width: max-content;
-  padding: 0 1em;
-  line-height: 64px;
+  background-color: #111144;
+  font-size: 2em;
+  padding: 0.5em 0;
+  font-family: Verdana;
+  color: aliceblue;
+}
+
+.main
+{
+  background-color: white;
+  margin: 3% 20%;
+  text-align: center;
+  border-radius: 1em;
+  overflow: hidden;
+  padding-bottom: 2em;
 }
 
 .content
 {
-  background-color: dimgrey;
-  height: 50vh;
-  margin: 3% 8%;
-  padding: 3em;
-  align-items: center;
-  text-align: center;
+  padding: 1em;
 }
 
-.farmer-welcome-card
+.frame
 {
-  width: 47.5%;
+  width: 33.33%;
   float: left;
-  height: 50%;
-  background-color: black;
-  text-align: center;
-  display: block;
-  margin: 0 1em;
-  transition: 0.2s;
 }
-.farmer-welcome-card:hover
-{
-  transform: scale(1.1);
-  letter-spacing: 10px;
-}
-.market
-{
-  height: 50%;
-  width: 95%;
-  background-color: black;
-  margin: 1em 0;
-  text-align: center;
-  display: inline-block;
-  margin-right: 12px;
-  transition: 0.2s;
-}
-.market:hover
-{
-  transform: scale(1.1);
-  letter-spacing: 10px;
-}
-
 .text
 {
-  color: papayawhip;
-  font-size: 2.5em;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+  height: 4em;
+  margin: 0 4%;
+  padding: 15% 2% 0;
+  border-radius: 9px;
+  font-family: Verdana;
+  font-size: 1.5em;
+  border: 3px solid dimgray;
+  transition: 250ms;
+}
+
+.text:hover
+{
+  background-color: #e0f2ff;
+  transform: scale(1.08);
 }
