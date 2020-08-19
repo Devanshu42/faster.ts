@@ -165,9 +165,9 @@
 
 .main
 {
-  position: absolute;
-  bottom: 0;
-  margin-top: 15em;
+  /*position: absolute;*/
+  /*bottom: 0;*/
+  margin-top: 10em;
   background-color: black;
   padding: 0 8%;
   display: inline-block;
