@@ -12,6 +12,7 @@ import { WelcomeFarmerComponent } from './welcome-farmer/welcome-farmer.componen
 import { SellHistoryComponent } from './sell-history/sell-history.component';
 import { WelcomeBidderComponent } from './welcome-bidder/welcome-bidder.component';
 import { ForgetComponent } from './forget/forget.component';
+import {AboutComponent} from './about/about.component';
 
 
 const routes: Routes = [
@@ -27,6 +28,7 @@ const routes: Routes = [
   {path: 'welcome-farmer', component: WelcomeFarmerComponent},
   {path: 'sell-history', component: SellHistoryComponent},
   {path: 'bidder-welcome', component: WelcomeBidderComponent},
+  {path: 'about', component: AboutComponent},
   {path: '**', component: NotfoundComponent}
 
 ];
