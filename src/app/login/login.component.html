@@ -1,26 +1,27 @@
-<form #Registerform="ngForm">  
-  <h2 style="text-align: center;">Login to your account !</h2>
-    <div class="shift_middle">
-      <label for="email"><b>Email</b></label><br>
-      <small class="danger" *ngIf="email.touched && email.invalid">Please enter Email</small><br>
-      <input class="padding_textbox" type="text" placeholder="Enter Email" name="email" [(ngModel)]="obj.email" #email="ngModel" required>
+<form #Registerform="ngForm">
+  <div class="main">
+    <h2>Login</h2>
+    <div class="content">
+<!--      <label for="email"><b>Email</b></label><br>-->
+<!--      <small class="danger" *ngIf="email.touched && email.invalid">Please enter Email</small><br>-->
+      <input class="textbox" type="email" placeholder="Email" name="email" [(ngModel)]="obj.email" #email="ngModel" required>
       <br><br>
 
-      <label  for="psw"><b>Password</b></label><br>
-      <small  class="danger" *ngIf="password.touched && password.invalid">Please enter Password</small><br>
-      <input class="padding_textbox" type="password" placeholder="Enter Password" name="psw" [(ngModel)]="obj.password" #password="ngModel" required>
-      
-      <br><br>  <button class="loginbutton" routerLink='/welcome-farmer'  type="button">Login</button>
-      <label class="marginforforgotpassword"><a routerLink="/forget">Forgot Password?</a></label>
-    <br><br><br>
-    <div>
-      <label (click)="appear=true" >New User? Register Here</label>&nbsp;&nbsp;&nbsp;
-      <span *ngIf="appear">
-        <button routerLink='/farmer-registration' class="loginbutton">Farmer Registration</button>&nbsp;&nbsp;&nbsp;
-        <button routerLink='/bidder-registration' class="loginbutton">Bidder Registration</button>&nbsp;&nbsp;&nbsp;
-        <button (click)="appear=flase" class="loginbutton">Hide</button>&nbsp;&nbsp;&nbsp;
+<!--      <label  for="psw"><b>Password</b></label><br>-->
+<!--      <small  class="danger" *ngIf="password.touched && password.invalid">Please enter Password</small><br>-->
+      <input class="textbox" type="password" placeholder="Password" name="psw" [(ngModel)]="obj.password" #password="ngModel" required>
+      <div class = "forgot">
+        <a routerLink="/forget" style="color: inherit; text-decoration: none">Forgot Password?</a>
+      </div>
 
-      </span>
+      <div class="loginbutton" routerLink='/welcome-farmer'>LOGIN</div>
+
+        <br><br><br>
+        <label (click)="appear=true" >New User? Register Here</label>&nbsp;&nbsp;&nbsp;
+        <div *ngIf="appear" class="extra">
+          <div routerLink='/farmer-registration' class="extra-item">Farmer</div>&nbsp;&nbsp;&nbsp;
+          <div routerLink='/bidder-registration' class="extra-item">Bidder</div>&nbsp;&nbsp;&nbsp;
+        </div>
     </div>
-    </div>
-  </form>
+  </div>
+</form>
