@@ -1,6 +1,6 @@
 .shift_middle{
     margin-left: 30%;
-    margin-top: 10%;
+    margin-top: 9%;
     font-size: large; 
 }
 .padding_textbox{
@@ -14,28 +14,29 @@
     padding: 0.5%;
     font-size: medium;
     margin-left: 17.5%;   
-    margin-top: 4%; 
+    margin-top: 2%; 
+    margin-bottom: 2%;
     }
     .padding_quantity{
     padding: 0.7%;
     width: 30%;
     height: 10%;
     font-size: medium;
-    margin-left: 10.6%;
+    margin-left: 10.1%;
     }
     .padding_ph{
     padding: 0.7%;
     width: 30.2%;
     height: 10%;
     font-size: medium;
-    margin-left: 3.6%;
+    margin-left: 4.5%;
     }
     .padding_fertlizer{
         padding: 0.7%;
         width: 31.7%;
         height: 10%;
         font-size: medium;
-        margin-left: 6.7%;
+        margin-left: 7%;
     }
     .padding_cropname{
         padding: 0.7%;
