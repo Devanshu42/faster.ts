@@ -29,10 +29,11 @@
 /*font-size: large;*/
 /*}*/
 
-/*.danger*/
-/*{*/
-/*    color: red;*/
-/*}*/
+.danger
+{
+    margin-right:50%;
+    color: red;
+}
 /*span*/
 /*{*/
 /*    border:1px solid black;*/
