@@ -1,0 +1,24 @@
+span{
+    color:lightskyblue;
+    font-size:large;
+}
+div{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    font-size:medium;
+    overflow: hidden;  
+}
+
+.about{
+    border: 20px solid greenyellow;
+    box-shadow: inset 0px 0px 0px 10px lightgrey;
+    box-sizing: border-box;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.hed{
+    color: blueviolet;
+    text-align: center;
+}
