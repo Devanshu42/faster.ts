@@ -32,7 +32,7 @@ export class LoginBidderComponent implements OnInit {
           let bidderName = user.bName;
           sessionStorage.setItem('FarmerName', bidderName);
           sessionStorage.setItem('FarmerEmail', bidderEmail);
-          this.router.navigate(['welcome-farmer']);
+          this.router.navigate(['welcome-bidder']);
         }
         else
         {
