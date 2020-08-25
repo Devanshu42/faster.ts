@@ -1,0 +1,151 @@
+/*.shift_middle*/
+/*{*/
+/*    margin: 10% 20%;*/
+/*    font-size: large;*/
+
+/*}*/
+/*.padding_textbox*/
+/*{*/
+/*    font-size: 0.8em;*/
+/*    !* border-radius: 15em; rounded corners *!*/
+/*    padding: 0.7%;*/
+/*    width: 50%;*/
+/*    height: 10%;*/
+/*}*/
+
+/*.marginforforgotpassword*/
+/*{*/
+/*    margin-left: 35%;*/
+/*}*/
+
+/*.marginforquestion*/
+/*{*/
+/*    margin-left: 18%;*/
+/*}*/
+
+/*.loginbutton*/
+/*{*/
+/*padding: 0.7%;*/
+/*font-size: large;*/
+/*}*/
+
+.danger
+{
+    margin-right:50%;
+    color: red;
+}
+/*span*/
+/*{*/
+/*    border:1px solid black;*/
+/*    padding:10px;*/
+/*    width:800px;*/
+/*    background-color: darkgrey;*/
+/*    padding-bottom: 3%;*/
+/*    padding-top: 3%;*/
+/*    margin: 10px auto;*/
+/*    text-align: center;*/
+/*    border-radius: 5px;*/
+/*    background-color: white;*/
+/*}*/
+
+.main
+{
+  background: white;
+  padding: 1% 4% 2%;
+  margin: 4% 36% 8%;
+  text-align: center;
+  border-radius: 8px;
+  font-family: Verdana;
+}
+
+.content
+{
+  /*background-color: #bb9099;*/
+  padding: 9% 0.5%;
+}
+
+
+.textbox
+{
+  background: transparent;
+  border: none;
+  border-bottom: solid;
+  border-bottom-color: dimgrey;
+  border-bottom-width: 3px;
+  width: 100%;
+  height: 3.5em;
+  font-size: medium;
+  /*transition: 0.2s;*/
+}
+
+.textbox:focus
+{
+  outline: none;
+}
+
+.loginbutton
+{
+  margin-top: 3em;
+  height:max-content;
+  border-radius: 1.4em;
+  background-color: red;
+  padding: 0.8em 0;
+  color: white;
+  font-family: Verdana;
+  letter-spacing: 1px;
+  background-image: linear-gradient(to right, cornflowerblue,purple);
+}
+
+.forgot
+{
+  text-align: right;
+  padding: 1em 0;
+  color: dimgrey;
+  font-family: Verdana;
+}
+.forgot:hover
+{
+  color: red;
+}
+
+.extra
+{
+  margin-top: 2em;
+  border-radius: 1em;
+  border:3px solid dimgray;
+  padding: 1em 0 0;
+
+}
+
+.extra-item
+{
+  padding: 2% 0;
+  height: max-content;
+  /*background-color: #bb9099;*/
+  border:1px solid black;
+  border-radius: 4px;
+  margin: 0 30% 5%;
+  padding: 0.4em 1em;
+}
+
+.extra-item:hover
+{
+  background: #e0f2ff;
+}
+
+/*.change*/
+/*{*/
+/*  background: rgba(33,33,55,1);*/
+/*  position: absolute;*/
+/*  top: 40vh;*/
+/*  width: 40vw;*/
+/*  margin-left: 32.5%;*/
+/*  margin-right: 32.5%;*/
+/*}*/
+
+
+
+
+
+
+
