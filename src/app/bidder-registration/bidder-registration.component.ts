@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormsModule, NgForm } from '@angular/forms';
+
 
 @Component({
   selector: 'app-bidder-registration',
@@ -8,6 +10,11 @@ import { Component, OnInit } from '@angular/core';
 export class BidderRegistrationComponent implements OnInit {
 
   constructor() { }
+
+  onSubmit(f: NgForm)
+  {
+    return null;
+  }
 
   ngOnInit(): void {
   }

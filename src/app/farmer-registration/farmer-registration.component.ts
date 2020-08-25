@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormsModule, NgForm } from '@angular/forms';
+import { FarmerService } from './farmerservice';
 
 @Component({
   selector: 'app-farmer-registration',
@@ -7,9 +9,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FarmerRegistrationComponent implements OnInit {
 
-  constructor() { }
+  constructor( private fServe: FarmerService) { }
 
   ngOnInit(): void {
+  }
+
+  onSubmit(f: NgForm)
+  {
+    console.log(f.value);
+    this.fServe.sendformdata(f.value).subscribe(data => console.log('Success', data));
   }
 
 }
