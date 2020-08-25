@@ -1,7 +1,5 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
-import { FormsModule, NgForm } from '@angular/forms';
 import { Farmerlogin } from './farmerlogin';
 
 
