@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { FarmerInfo } from './farmerInfo';
 import { Observable } from 'rxjs';
-
+import { FarmerInfo } from './farmerInfo';
 @Injectable({
   providedIn: 'root'
 })

@@ -85,11 +85,12 @@
 
 .loginbutton
 {
+  overflow: hidden;
   margin-top: 3em;
   height:max-content;
-  border-radius: 1.4em;
+  border-radius: 1.7em;
   background-color: red;
-  padding: 0.8em 0;
+  padding: 0 0;
   color: white;
   font-family: Verdana;
   letter-spacing: 1px;
