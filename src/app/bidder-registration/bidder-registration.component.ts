@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import { BidderService } from './bidder.service';
 
 
 @Component({
@@ -9,11 +10,11 @@ import { FormsModule, NgForm } from '@angular/forms';
 })
 export class BidderRegistrationComponent implements OnInit {
 
-  constructor() { }
+  constructor(private bidderServe: BidderService) { }
 
   onSubmit(f: NgForm)
   {
-    return null;
+    this.bidderServe.sendformdata(f.value).subscribe(data => console.log('Success', data));
   }
 
   ngOnInit(): void {

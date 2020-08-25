@@ -1,18 +1,19 @@
 import { Injectable } from '@angular/core';
+import { FormsModule, NgForm } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
-import { FarmerInfo } from './farmerInfo';
 import { Observable } from 'rxjs';
+
 
 @Injectable({
   providedIn: 'root'
 })
-export class FarmerService 
+export class BidderService 
 {
-  url = 'http://localhost:8587/register'
+  url = 'http://localhost:8587/bidderregister'
   constructor(private http: HttpClient) { }
 
-  sendformdata(farmer: FarmerInfo):Observable<any>
+  sendformdata(bidder: NgForm) : Observable<any>
   {
-    return this.http.post(this.url, farmer);
+    return this.http.post(this.url, bidder);
   }
 }

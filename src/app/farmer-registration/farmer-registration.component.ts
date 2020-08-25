@@ -9,14 +9,13 @@ import { FarmerService } from './farmerservice';
 })
 export class FarmerRegistrationComponent implements OnInit {
 
-  constructor( private fServe: FarmerService) { }
+  constructor(private fServe: FarmerService) { }
 
   ngOnInit(): void {
   }
 
   onSubmit(f: NgForm)
   {
-    console.log(f.value);
     this.fServe.sendformdata(f.value).subscribe(data => console.log('Success', data));
   }
 
