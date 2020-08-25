@@ -6,8 +6,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 // import { LoginselectComponent } from './loginselect/loginselect.component';
-import { FarmerLoginComponent } from './farmer-login/farmer-login.component';
-import { BidderLoginComponent } from './bidder-login/bidder-login.component';
+// import { FarmerLoginComponent } from './farmer-login/farmer-login.component';
+// import { BidderLoginComponent } from './bidder-login/bidder-login.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { ViewMarketComponent } from './view-market/view-market.component';
 import { WelcomeFarmerComponent } from './welcome-farmer/welcome-farmer.component';
@@ -22,6 +22,8 @@ import { ContactComponent } from './contact/contact.component';
 import { LoginBidderComponent } from './login-bidder/login-bidder.component';
 import { LoginFarmerComponent } from './login-farmer/login-farmer.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+import { FarmerRegistrationComponent } from './farmer-registration/farmer-registration.component';
+import { BidderRegistrationComponent } from './bidder-registration/bidder-registration.component';
 
 
 
@@ -31,8 +33,8 @@ import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.compo
     HomeComponent,
     LoginComponent,
     // LoginselectComponent,
-    FarmerLoginComponent,
-    BidderLoginComponent,
+    // FarmerLoginComponent,
+    // BidderLoginComponent,
     NotfoundComponent,
     ViewMarketComponent,
     WelcomeFarmerComponent,
@@ -45,7 +47,9 @@ import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.compo
     ContactComponent,
     LoginBidderComponent,
     LoginFarmerComponent,
-    AdminDashboardComponent
+    AdminDashboardComponent,
+    FarmerRegistrationComponent,
+    BidderRegistrationComponent
   ],
   imports: [
     BrowserModule,

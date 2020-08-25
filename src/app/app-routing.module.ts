@@ -3,8 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 // import { LoginselectComponent } from './loginselect/loginselect.component';
-import { FarmerLoginComponent } from './farmer-login/farmer-login.component';
-import { BidderLoginComponent } from './bidder-login/bidder-login.component';
+// import { FarmerLoginComponent } from './farmer-login/farmer-login.component';
+// import { BidderLoginComponent } from './bidder-login/bidder-login.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { ViewMarketComponent } from './view-market/view-market.component';
 import { SellRequestComponent} from './sell-request/sell-request.component';
@@ -16,6 +16,8 @@ import {AboutComponent} from './about/about.component';
 import { LoginFarmerComponent } from './login-farmer/login-farmer.component';
 import { LoginBidderComponent } from './login-bidder/login-bidder.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+import { FarmerRegistrationComponent } from './farmer-registration/farmer-registration.component';
+import { BidderRegistrationComponent } from './bidder-registration/bidder-registration.component';
 
 
 const routes: Routes = [
@@ -23,8 +25,8 @@ const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'login', component: LoginComponent},
   // {path:'select',component:LoginselectComponent},
-  {path: 'farmer-registration', component: FarmerLoginComponent},
-  {path: 'bidder-registration', component: BidderLoginComponent},
+  {path: 'farmer-registration', component: FarmerRegistrationComponent},
+  {path: 'bidder-registration', component: BidderRegistrationComponent},
   {path: 'market', component: ViewMarketComponent},
   {path: 'forget', component: ForgetComponent},
   {path: 'sell-request', component: SellRequestComponent},
