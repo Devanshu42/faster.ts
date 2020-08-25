@@ -15,8 +15,4 @@ export class BloginService
     {
         return this.http.post<any>(this.url,blogin);
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 13cad4954387758c248df966e5300166d950269f
