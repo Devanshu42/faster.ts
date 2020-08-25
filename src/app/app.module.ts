@@ -19,6 +19,9 @@ import { ForgetComponent } from './forget/forget.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { LoginBidderComponent } from './login-bidder/login-bidder.component';
+import { LoginFarmerComponent } from './login-farmer/login-farmer.component';
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 
 
 
@@ -39,7 +42,10 @@ import { ContactComponent } from './contact/contact.component';
     ForgetComponent,
     FooterComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    LoginBidderComponent,
+    LoginFarmerComponent,
+    AdminDashboardComponent
   ],
   imports: [
     BrowserModule,

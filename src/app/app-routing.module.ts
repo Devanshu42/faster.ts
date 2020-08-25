@@ -13,6 +13,9 @@ import { SellHistoryComponent } from './sell-history/sell-history.component';
 import { WelcomeBidderComponent } from './welcome-bidder/welcome-bidder.component';
 import { ForgetComponent } from './forget/forget.component';
 import {AboutComponent} from './about/about.component';
+import { LoginFarmerComponent } from './login-farmer/login-farmer.component';
+import { LoginBidderComponent } from './login-bidder/login-bidder.component';
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 
 
 const routes: Routes = [
@@ -29,6 +32,9 @@ const routes: Routes = [
   {path: 'sell-history', component: SellHistoryComponent},
   {path: 'bidder-welcome', component: WelcomeBidderComponent},
   {path: 'about', component: AboutComponent},
+  {path: 'login-farmer', component: LoginFarmerComponent},
+  {path: 'login-bidder', component: LoginBidderComponent},
+  {path: 'admin-dash', component: AdminDashboardComponent},
   {path: '**', component: NotfoundComponent}
 
 ];

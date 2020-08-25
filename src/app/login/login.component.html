@@ -1,6 +1,6 @@
 <form #Registerform="ngForm" ngNativeValidate #form>
   <div class="main">
-    <h2>Login</h2>
+    <h2>Admin Login</h2>
     <div class="content">
       <small class="danger" *ngIf="email.touched && email.invalid">Please enter Email</small><br>
       <input class="textbox" type="email" placeholder="Email" name="email" [(ngModel)]="obj.email" #email="ngModel" required>
@@ -8,18 +8,11 @@
 
 <small  class="danger" *ngIf="password.touched && password.invalid">Please enter Password</small><br>
       <input class="textbox" type="password" placeholder="Password" name="psw" [(ngModel)]="obj.password" #password="ngModel" required>
-      <div class = "forgot">
-        <a routerLink="/forget" style="color: inherit; text-decoration: none">Forgot Password?</a>
-      </div>
+      <div class="loginbutton" routerLink='/admin-dashboard'>LOGIN</div>
 
-      <div class="loginbutton" routerLink='/welcome-farmer'>LOGIN</div>
+      <!-- we have to make this admin-dashboard route  -->
 
         <br><br>
-        <label (click)="appear=true">New User? Click here to register.</label>
-        <div *ngIf="appear" class="extra">
-          <div routerLink='/farmer-registration' class="extra-item">FARMER</div>
-          <div routerLink='/bidder-registration' class="extra-item">BIDDER</div>
-        </div>
     </div>
   </div>
 
