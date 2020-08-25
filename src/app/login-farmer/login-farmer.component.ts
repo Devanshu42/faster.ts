@@ -10,8 +10,8 @@ import { Farmerlogin } from './farmerlogin';
   styleUrls: ['./login-farmer.component.css']
 })
 export class LoginFarmerComponent implements OnInit {
-  fEmail:any
-  fPassword:any
+  email:any
+  password:any
   message:any
 
   constructor(private fserve: FloginService, private router: Router) { }
@@ -19,15 +19,15 @@ export class LoginFarmerComponent implements OnInit {
   onSubmit(f: NgForm)
   {
     var farmlog = new Farmerlogin();
-    farmlog.email = this.fEmail;
-    farmlog.email = this.fPassword;
+    farmlog.email = this.email;
+    farmlog.password = this.password;
     this.fserve.login(farmlog).subscribe(
       user=>{
         alert(JSON.stringify(user))
 
         if(user.status=='SUCCESS')
         {
-          let farmerEmail = this.fEmail;
+          let farmerEmail = user.email;
           let farmerName = user.fName;
           sessionStorage.setItem('FarmerName', farmerName);
           sessionStorage.setItem('FarmerEmail', farmerEmail);

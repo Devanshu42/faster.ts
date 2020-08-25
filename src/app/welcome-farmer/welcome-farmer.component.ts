@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./welcome-farmer.component.css']
 })
 export class WelcomeFarmerComponent implements OnInit {
-
+farmerName:String;
   constructor() { }
 
   ngOnInit(): void {
+    this.farmerName=sessionStorage.getItem('FarmerName');
   }
 
 }

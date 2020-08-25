@@ -32,6 +32,7 @@ const routes: Routes = [
   {path: 'forget', component: ForgetComponent},
   {path: 'sell-request', component: SellRequestComponent},
   {path: 'welcome-farmer', component: WelcomeFarmerComponent},
+  {path: 'welcome-bidder', component: WelcomeBidderComponent},
   {path: 'sell-history', component: SellHistoryComponent},
   {path: 'bidder-welcome', component: WelcomeBidderComponent},
   {path: 'about', component: AboutComponent},
