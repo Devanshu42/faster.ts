@@ -1,24 +1,27 @@
-<form #Registerform="ngForm" ngNativeValidate #form>
-    <div class="main">
-      <h2>Welcome Bidder! <br>Please Login.</h2>
-      <div class="content">
-        <small class="danger" *ngIf="email.touched && email.invalid">Please enter Email</small><br>
-        <input class="textbox" type="email" placeholder="Email" name="email" [(ngModel)]="obj.email" #email="ngModel" required>
-        <br><br>
-  
-  <small  class="danger" *ngIf="password.touched && password.invalid">Please enter Password</small><br>
-        <input class="textbox" type="password" placeholder="Password" name="psw" [(ngModel)]="obj.password" #password="ngModel" required>
-        <div class = "forgot">
-          <a routerLink="/forget" style="color: inherit; text-decoration: none">Forgot Password?</a>
-        </div>
-  
-        <div class="loginbutton" routerLink='/welcome-bidder'>LOGIN</div>
-  
-          <br><br>
-          <br><br>
-          <a routerLink='/bidder-registration'>New Bidder? Click here to register.</a>
+<form #bidderform="ngForm" (ngSubmit) = "onSubmit(bidderform)" ngNativeValidate>
+  <div class="main">
+    <h2>Welcome Bidder! <br>Please Login.</h2>
+    <div class="content">
+      <!-- <small class="danger" *ngIf="email.touched && email.invalid">Please enter Email</small><br> -->
+      <input class="textbox" type="email" placeholder="Email" name="email" [(ngModel)] = "email" required>
+      <br><br>
+
+<!-- <small  class="danger" *ngIf="password.touched && password.invalid">Please enter Password</small><br> -->
+      <input class="textbox" type="password" placeholder="Password" name="password" [(ngModel)] = "password"  required>
+      <div class = "forgot">
+        <a routerLink="/forget" style="color: inherit; text-decoration: none">Forgot Password?</a>
       </div>
+
+      <div class="loginbutton">
+        <button style="color: white;background-color: transparent; width: 100%; line-height:3em; font-size: large; border: transparent; font-weight: bold;"
+        >L O G I N
+      </button>
     </div>
-  
-  </form>
-  
+
+        <br><br>
+        <a routerLink='/farmer-registration'>New User? Click here to register.</a>
+    </div>
+  </div>
+
+
+</form>
