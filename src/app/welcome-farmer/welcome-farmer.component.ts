@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AppComponent } from '../app.component';
 
 
 @Component({
@@ -9,8 +10,10 @@ import { Router } from '@angular/router';
 })
 export class WelcomeFarmerComponent implements OnInit {
 farmerName:String;
+
   ngOnInit(): void {
     this.farmerName=sessionStorage.getItem('FarmerName');
+    this.refresh.ngOnInit();
   }
   logout()
   {
@@ -21,7 +24,7 @@ farmerName:String;
     }
   }
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private refresh: AppComponent) {
     
    }
 

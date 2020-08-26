@@ -11,8 +11,9 @@ export class AppComponent implements OnInit
   title = 'SchemeForFarmers';
   loginout:string;
   ngOnInit(): void {
+    
     // this.farmerName=sessionStorage.getItem('FarmerName');
-    if(sessionStorage.getItem("farmerEmail")===null)
+    if(sessionStorage.length===0)
     {
       this.loginout = "Login";
     }
