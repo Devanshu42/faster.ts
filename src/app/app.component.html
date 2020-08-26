@@ -31,13 +31,13 @@
 
 
         <a  style="color:inherit; text-decoration: none; display:block; height: 100%">
-          <button class="login" (click)="iwillhide=true">Login</button>
+          <button class="login" (click)="iwillhide=true">{{loginout}}</button>
             <div *ngIf="iwillhide" class="dropdown">
             <div class="dropdown-content">
               <a [routerLink]="['/login-farmer']"(click)="iwillhide=false">Farmer Login</a>
               <a [routerLink]="['/login-bidder']" (click)="iwillhide=false">Bidder Login</a>
               <a [routerLink]="['/login']" (click)="iwillhide=false">Admin Login</a>
-              <a (click)="iwillhide=false">Go Back</a>
+              <a (click)="iwillhide=false">Cancel</a>
             </div>
           </div>
           </a>
