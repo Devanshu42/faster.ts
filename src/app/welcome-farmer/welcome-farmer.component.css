@@ -44,3 +44,20 @@
   background-color: #e0f2ff;
   transform: scale(1.08);
 }
+.logoutbutton
+{
+  text-align: center;
+  width:10%;
+  border-radius: 1.7em;
+  background-color: red;
+  padding: 0 0;
+  color: white;
+  font-family: Verdana;
+  letter-spacing: 1px;
+  background-image: linear-gradient(to right, cornflowerblue,purple);
+}
+.logoutdiv{
+  margin:auto;
+  padding: 50%;
+  float:middle;
+}

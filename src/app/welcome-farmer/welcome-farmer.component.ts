@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-welcome-farmer',
@@ -7,10 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WelcomeFarmerComponent implements OnInit {
 farmerName:String;
-  constructor() { }
-
   ngOnInit(): void {
-    this.farmerName=sessionStorage.getItem('farmerName');
+    this.farmerName=sessionStorage.getItem('FarmerName');
   }
+  logout()
+  {
+    sessionStorage.clear()
+    if(sessionStorage.getItem("farmerEmail")===null)
+    {
+        this.router.navigate(['/']);
+    }
+  }
+
+  constructor(private router: Router) {
+    
+   }
 
 }

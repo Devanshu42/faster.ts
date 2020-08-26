@@ -16,3 +16,16 @@ table,th,td{
     margin-left: 43%;
     margin-top: 2%;
 }
+.logoutbutton
+{
+  overflow: hidden;
+  margin-top: 3em;
+  height:max-content;
+  border-radius: 1.7em;
+  background-color: red;
+  padding: 0 0;
+  color: white;
+  font-family: Verdana;
+  letter-spacing: 1px;
+  background-image: linear-gradient(to right, cornflowerblue,purple);
+}

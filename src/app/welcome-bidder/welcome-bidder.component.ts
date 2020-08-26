@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -10,9 +11,17 @@ export class WelcomeBidderComponent implements OnInit {
   items=[{croptype:"Food Crop",cropname:"Wheat",baseprice:1000,currentbid:1500},
        {croptype:"Food Crop",cropname:"Rice",baseprice:2000,currentbid:2100},
        {croptype:"Cash Crop",cropname:"Sugarcane",baseprice:3500,currentbid:3600}];
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+  logout()
+  {
+    sessionStorage.clear()
+    if(sessionStorage.getItem("farmerEmail")===null)
+    {
+        this.router.navigate(['/']);
+    }
   }
 
 }

@@ -27,8 +27,8 @@ export class LoginFarmerComponent implements OnInit {
 
         if(user.status=='SUCCESS')
         {
+          let farmerName = user.name;
           let farmerEmail = user.email;
-          let farmerName = user.fName;
           sessionStorage.setItem('FarmerName', farmerName);
           sessionStorage.setItem('FarmerEmail', farmerEmail);
           this.router.navigate(['welcome-farmer']);
