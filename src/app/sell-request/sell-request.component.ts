@@ -31,8 +31,7 @@ export class SellRequestComponent implements OnInit {
 
   }
   constructor(private service: SellRequestService, private router: Router) { }
-  sellObj = new sellRequest(0, '', '', '', 0, 0);
-  
+  sellObj = new sellRequest();
 
   ngOnInit(): void 
   {
