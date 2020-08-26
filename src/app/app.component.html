@@ -34,9 +34,9 @@
           <button class="login" (click)="iwillhide=true">Login</button>
             <div *ngIf="iwillhide" class="dropdown">
             <div class="dropdown-content">
-              <a [routerLink]="['/login-farmer']">Farmer Login</a>
-              <a [routerLink]="['/login-bidder']">Bidder Login</a>
-              <a [routerLink]="['/login']">Admin Login</a>
+              <a [routerLink]="['/login-farmer']"(click)="iwillhide=false">Farmer Login</a>
+              <a [routerLink]="['/login-bidder']" (click)="iwillhide=false">Bidder Login</a>
+              <a [routerLink]="['/login']" (click)="iwillhide=false">Admin Login</a>
               <a (click)="iwillhide=false">Go Back</a>
             </div>
           </div>

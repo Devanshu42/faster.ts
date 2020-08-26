@@ -29,11 +29,11 @@ export class LoginComponent implements OnInit {
 
         if(user.status=='SUCCESS')
         {
+          let adminName = user.name;
           let adminEmail = user.email;
-          let adminName = user.bName;
-          sessionStorage.setItem('FarmerName', adminName);
-          sessionStorage.setItem('FarmerEmail', adminEmail);
-          this.router.navigate(['welcome-bidder']);
+          sessionStorage.setItem('adminName', adminName);
+          sessionStorage.setItem('adminEmail', adminEmail);
+          this.router.navigate(['admin-dash']);
         }
         else
         {
