@@ -14,7 +14,8 @@ export class BidderRegistrationComponent implements OnInit {
 
   onSubmit(f: NgForm)
   {
-    this.bidderServe.sendformdata(f.value).subscribe(data => console.log('Success', data));
+    this.bidderServe.sendformdata(f.value).subscribe(data => alert( data.message));
+  
   }
 
   ngOnInit(): void {
