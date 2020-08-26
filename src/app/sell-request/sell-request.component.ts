@@ -41,5 +41,6 @@ export class SellRequestComponent implements OnInit {
   onSubmit(sellObj: sellRequest)
   {
     this.service.sendSellReq(sellObj).subscribe(data=>console.log(JSON.stringify(data)));
+    alert("Your Sell Request Placed Successfully")
   }
 }

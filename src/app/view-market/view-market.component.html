@@ -15,19 +15,11 @@
          </thead>
          <tbody>
             <tr *ngFor="let item of items">
-               <td>{{ item.croptype }}</td>
                <td>{{ item.cropname }}</td>
-               <td>{{ item.baseprice }}</td>
-               <td>{{ item.currentbid}}</td>
+               <td>{{ item.date }}</td>
+               <td>{{ item.quantity }}</td>
+               <td>{{ item.baseprice}}</td>
             </tr>
          </tbody>
       </table>
-    <div class="bottom">
-      <h4 class="p2">Previous Bids</h4>
-    </div>
-    <div class="card2" *ngFor="let item of items">
-      <h4>Highest Bid is {{item.bid1}}</h4>
-      <h4>Second Highest Bid is {{item.bid2}}</h4>
-      <h4>Third Highest Bid is {{item.bid3}}</h4>
-    </div> 
 </div>
