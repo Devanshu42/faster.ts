@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { cropdetails } from '../cropdetails';
+import { FormsModule, NgForm } from '@angular/forms';
+import { Router } from "@angular/router";
+import { AdmLoginService } from './adm-login.service';
+import { AdminLogin } from './adminLogin';
 
 
 @Component({
@@ -9,9 +12,37 @@ import { cropdetails } from '../cropdetails';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
-  obj = new cropdetails();
-  appear = false;
+  email:any
+  password:any
+  message:any
+
+  constructor(private admserve: AdmLoginService, private router: Router) { }
+
+  onSubmit(f: NgForm)
+  {
+    var bidderLog = new AdminLogin();
+    bidderLog.email = this.email;
+    bidderLog.password = this.password;
+    this.admserve.login(bidderLog).subscribe(
+      user=>{
+        // alert(JSON.stringify(user))
+
+        if(user.status=='SUCCESS')
+        {
+          let adminEmail = user.email;
+          let adminName = user.bName;
+          sessionStorage.setItem('FarmerName', adminName);
+          sessionStorage.setItem('FarmerEmail', adminEmail);
+          this.router.navigate(['welcome-bidder']);
+        }
+        else
+        {
+          alert("Invalid Email/Password. Please try again")
+          this.message=user.message
+        }
+      }
+    )
+  }
 
   ngOnInit(): void
   {

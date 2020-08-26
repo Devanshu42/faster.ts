@@ -24,7 +24,7 @@ export class LoginBidderComponent implements OnInit {
     bidderLog.password = this.password;
     this.bserve.login(bidderLog).subscribe(
       user=>{
-        alert(JSON.stringify(user))
+        // alert(JSON.stringify(user))
 
         if(user.status=='SUCCESS')
         {
@@ -36,6 +36,7 @@ export class LoginBidderComponent implements OnInit {
         }
         else
         {
+          alert("Invalid Email/Password. Please try again")
           this.message=user.message
         }
       }
