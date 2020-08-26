@@ -10,7 +10,7 @@ farmerName:String;
   constructor() { }
 
   ngOnInit(): void {
-    this.farmerName=sessionStorage.getItem('FarmerName');
+    this.farmerName=sessionStorage.getItem('farmerName');
   }
 
 }
