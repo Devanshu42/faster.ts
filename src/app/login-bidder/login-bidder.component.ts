@@ -28,10 +28,10 @@ export class LoginBidderComponent implements OnInit {
 
         if(user.status=='SUCCESS')
         {
+          let bidderName = user.name;
           let bidderEmail = user.email;
-          let bidderName = user.bName;
-          sessionStorage.setItem('FarmerName', bidderName);
-          sessionStorage.setItem('FarmerEmail', bidderEmail);
+          sessionStorage.setItem('BidderName', bidderName);
+          sessionStorage.setItem('BidderEmail', bidderEmail);
           this.router.navigate(['welcome-bidder']);
         }
         else

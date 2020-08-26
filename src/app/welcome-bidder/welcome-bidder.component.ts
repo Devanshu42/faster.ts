@@ -12,9 +12,13 @@ export class WelcomeBidderComponent implements OnInit {
        {croptype:"Food Crop",cropname:"Rice",baseprice:2000,currentbid:2100},
        {croptype:"Cash Crop",cropname:"Sugarcane",baseprice:3500,currentbid:3600}];
   constructor(private router: Router) { }
+  bidderName:String;
 
   ngOnInit(): void {
+    this.bidderName=sessionStorage.getItem('BidderName');
+
   }
+  
   logout()
   {
     sessionStorage.clear()
