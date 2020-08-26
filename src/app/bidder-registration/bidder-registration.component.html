@@ -12,11 +12,11 @@
     </p>
     </span>
     Your good name? &nbsp;
-    <input type=text name = "bName" ngModel placeholder="Enter your name" class="padding_textbox" required><br><br>
+    <input type="text" name = "bName" ngModel placeholder="Enter your name" class="padding_textbox" required><br><br>
     How can we contact you ? &nbsp;
-    <input type=text name = "bPhno" ngModel placeholder="Enter your Phone number" class="padding_textbox" minlength="10" required>&nbsp;
+    <input type="tel" name = "bPhno" ngModel placeholder="Enter your Phone number" class="padding_textbox" minlength="10" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>&nbsp;
     Got an email address ? &nbsp;
-    <input type=text name = "bEmail" ngModel placeholder="Enter your E-mail" class="padding_textbox" required><br>
+    <input type="email" name = "bEmail" ngModel placeholder="Enter your E-mail" class="padding_textbox" required><br>
     <span style="color:purple;">
     <p >
         Now onto Address. 
@@ -24,14 +24,14 @@
     </p>
     </span>
     Please provide your Address! &nbsp;
-    <input type=text name="addLine1" ngModel placeholder="Line 1" class="padding_textbox" required>&nbsp;
-    <input type=text name = "addLine2" ngModel placeholder="Line 2" class="padding_textbox"><br><br>
+    <input type="text" name="addLine1" ngModel placeholder="Line 1" class="padding_textbox" required>&nbsp;
+    <input type="text" name = "addLine2" ngModel placeholder="Line 2" class="padding_textbox"><br><br>
     City &nbsp;
-    <input type=text name="bCity" ngModel placeholder="City" class="padding_textbox" required>&nbsp;
+    <input type="text" name="bCity" ngModel placeholder="City" class="padding_textbox" required>&nbsp;
     State &nbsp;
-    <input type=text name="bState" ngModel placeholder="State" class="padding_textbox" required>&nbsp;
+    <input type="text" name="bState" ngModel placeholder="State" class="padding_textbox" required>&nbsp;
     Pincode &nbsp;
-    <input type=text name="bPincode" ngModel placeholder="Pincode" class="padding_textbox" required><br>
+    <input type="number" name="bPincode" ngModel placeholder="Pincode" class="padding_textbox" maxlength="6" required><br>
     <span style="color:purple;">
     <p>
         Provide the Bank Details
@@ -39,9 +39,9 @@
     </p>
     </span>
     Account No. &nbsp;
-    <input type=text name="bAccno" ngModel placeholder="Acc No" class="padding_textbox" required>&nbsp;
+    <input type="number" name="bAccno" ngModel placeholder="Acc No" class="padding_textbox" required>&nbsp;
     IFSC &nbsp;
-    <input type=text name="bIfsc" ngModel placeholder="IFSC" class="padding_textbox"required>&nbsp;<br>
+    <input type="text" name="bIfsc" ngModel placeholder="IFSC" class="padding_textbox"required>&nbsp;<br>
     <span style="color:purple;">
     <p>
         Provide us your Document numbers
@@ -49,9 +49,9 @@
     </p>
     </span>
     Aadhar  &nbsp;
-    <input type=text name="bAadhar" ngModel placeholder="Aadhar" class="padding_textbox" required>&nbsp;
+    <input type="text" name="bAadhar" ngModel placeholder="Aadhar" class="padding_textbox" required>&nbsp;
     PAN &nbsp;
-    <input type=text name="bPan" ngModel placeholder="PAN" class="padding_textbox" required >&nbsp; <br><br>
+    <input type="text" name="bPan" ngModel placeholder="PAN" class="padding_textbox" required >&nbsp; <br><br>
     <span style="color:purple;">
     <p>
         Choose a strong password to safegaurd your account.
@@ -59,9 +59,9 @@
     </p>
     </span>
     Password  &nbsp;
-    <input type=password name="bPassword" ngModel placeholder="Password" class="padding_textbox" required>&nbsp;
+    <input type=password name="bPassword" ngModel placeholder="Password" class="padding_textbox" [(ngModel)] = "pass" minlength="8" required>&nbsp;
     Re-enter Password &nbsp;
-    <input type=password name = "B_RESPASS" placeholder="Re-enter Password" class="padding_textbox" required>&nbsp; <br>
+    <input type=password name = "pass2" placeholder="Re-enter Password" class="padding_textbox" [(ngModel)] = "pass2" minlength="8" required>&nbsp; <br>
     <br><br>
     <button type=submit class="loginbutton">Submit</button>&nbsp;&nbsp;
     <button type=button class="loginbutton" >Reset</button>&nbsp;&nbsp;

@@ -14,4 +14,10 @@ export class FarmerService
   {
     return this.http.post(this.url, farmer);
   }
+  emailURL = 'http://localhost:8587/hello'
+
+  mail(fEmail: string): Observable<any>
+  {
+    return this.http.post(this.emailURL, fEmail);
+  }
 }

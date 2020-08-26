@@ -12,10 +12,19 @@ export class BidderRegistrationComponent implements OnInit {
 
   constructor(private bidderServe: BidderService) { }
 
+  pass:any
+  pass2: any
+
   onSubmit(f: NgForm)
   {
+    if(this.pass!==this.pass2)
+    {  
+      alert("Please check the passwords.")
+    }
+    else
+    {
     this.bidderServe.sendformdata(f.value).subscribe(data => alert( data.message));
-  
+    }
   }
 
   ngOnInit(): void {

@@ -11,12 +11,25 @@ export class FarmerRegistrationComponent implements OnInit {
 
   constructor(private fServe: FarmerService) { }
 
-  ngOnInit(): void {
+  email: any
+  pass:any
+  pass2: any
+
+  ngOnInit(): void 
+  {
+
   }
 
   onSubmit(f: NgForm)
   {
-    this.fServe.sendformdata(f.value).subscribe(data => alert( data.message));
-  }
-
+    if(this.pass!==this.pass2)
+    {
+      alert("Please check the passwords.")
+    }
+    else
+    {
+      this.fServe.mail(this.email).subscribe();
+      this.fServe.sendformdata(f.value).subscribe(data => alert(data.message));
+    }
+  }  
 }
