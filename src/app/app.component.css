@@ -76,3 +76,24 @@
   transform: scale(1.1);
   opacity: 1;
 }
+.dropdown-content a {
+  color:black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  background-color: #f1f1f1;
+  font-size: large;
+  font-family: Futura;
+ 
+}
+.dropdown {
+  column-width: inherit;
+  display: inline-block;
+  margin-left: 69%;
+  margin-top: 35%;
+  
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
