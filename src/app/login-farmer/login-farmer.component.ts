@@ -23,7 +23,7 @@ export class LoginFarmerComponent implements OnInit {
     farmlog.password = this.password;
     this.fserve.login(farmlog).subscribe(
       user=>{
-        alert(JSON.stringify(user))
+        //alert(JSON.stringify(user))
 
         if(user.status=='SUCCESS')
         {
@@ -36,6 +36,7 @@ export class LoginFarmerComponent implements OnInit {
         else
         {
           this.message=user.message
+          alert(this.message)
         }
       }
     )

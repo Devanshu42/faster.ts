@@ -16,7 +16,7 @@ export class FarmerRegistrationComponent implements OnInit {
 
   onSubmit(f: NgForm)
   {
-    this.fServe.sendformdata(f.value).subscribe(data => console.log('Success', data));
+    this.fServe.sendformdata(f.value).subscribe(data => alert( data.message));
   }
 
 }

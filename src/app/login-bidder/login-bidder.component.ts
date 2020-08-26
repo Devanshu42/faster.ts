@@ -36,8 +36,8 @@ export class LoginBidderComponent implements OnInit {
         }
         else
         {
-          alert("Invalid Email/Password. Please try again")
           this.message=user.message
+          alert(this.message)
         }
       }
     )
