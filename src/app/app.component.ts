@@ -1,4 +1,5 @@
 import { Component,OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,17 +10,29 @@ export class AppComponent implements OnInit
 {
   iwillhide=false;
   title = 'SchemeForFarmers';
-  loginout:string;
+  logoutbtn=true;
+  loginbtn = false;
+
   ngOnInit(): void {
     
     // this.farmerName=sessionStorage.getItem('FarmerName');
     if(sessionStorage.length===0)
     {
-      this.loginout = "Login";
+      this.logoutbtn = false;
+      this.loginbtn = true;
     }
     else{
-      this.loginout = "Logout";
+      this.loginbtn = false;
+      this.logoutbtn = true;
+
     }
+  }
+  constructor(private router: Router){}
+  
+  logout()
+  {
+    sessionStorage.clear()
+    this.router.navigate(['/']);
   }
 
 }

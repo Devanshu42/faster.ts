@@ -22,10 +22,7 @@ export class WelcomeBidderComponent implements OnInit {
   logout()
   {
     sessionStorage.clear()
-    if(sessionStorage.getItem("farmerEmail")===null)
-    {
-        this.router.navigate(['/']);
-    }
+    this.router.navigate(['/']);
   }
 
 }
