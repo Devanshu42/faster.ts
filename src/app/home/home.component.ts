@@ -7,7 +7,7 @@ import { AppComponent } from '../app.component';
 })
 export class HomeComponent implements OnInit {
 
-  constructor( private refresh: AppComponent) {
+  constructor(private refresh: AppComponent) {
     
   }
 

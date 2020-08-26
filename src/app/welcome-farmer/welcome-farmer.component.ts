@@ -18,10 +18,8 @@ farmerName:String;
   logout()
   {
     sessionStorage.clear()
-    if(sessionStorage.getItem("farmerEmail")===null)
-    {
         this.router.navigate(['/']);
-    }
+  
   }
 
   constructor(private router: Router, private refresh: AppComponent) {

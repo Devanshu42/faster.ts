@@ -1,6 +1,8 @@
-import { cropdetails } from '../cropdetails';
-
+import { cropdetails } from './cropdetails';
+import { sellRequest } from './sellRequest';
 import { Component, OnInit } from '@angular/core';
+import { SellRequestService } from './sell-request.service'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sell-request',
@@ -14,7 +16,8 @@ export class SellRequestComponent implements OnInit {
   fertilizer_name=["Nitrogen fertilizers", "Nitrogen fertilizers with inhibitors", "Phosphorus fertilizers", "Potassium fertilizers", "Calcium", 
   "magnesium and sulphur Fertilizers", "Micronutrient fertilizers", "Inhibitors", "Organic fertilizers"]
   obj=new cropdetails();
-  onselectcroptype(){
+  onselectcroptype()
+  {
     if(this.obj.croptype=="Cash-Crop")
       this.crop_names=["Sugarcane","tobacco", "jute", "cotton", "oilseeds"];
     else if (this.obj.croptype=="Food-Crop")
@@ -27,9 +30,17 @@ export class SellRequestComponent implements OnInit {
       this.crop_names=[];
 
   }
-  constructor() { }
+  constructor(private service: SellRequestService, private router: Router) { }
+  sellObj = new sellRequest(0, '', '', '', 0, 0);
+  
 
-  ngOnInit(): void {
+  ngOnInit(): void 
+  {
+    this.sellObj.fEmail = sessionStorage.getItem('FarmerEmail');
+    this.sellObj.adminApprove = 0;
   }
-
+  onSubmit(sellObj: sellRequest)
+  {
+    this.service.sendSellReq(sellObj).subscribe(data=>console.log(JSON.stringify(data)));
+  }
 }

@@ -1,30 +1,36 @@
-<form>
-    <div class="shift_middle">    
-    
+<form #sellReqForm="ngForm" (ngSubmit) = "onSubmit()" ngNativeValidate>
+    <div class="shift_middle">
+
     <label for="cptp">Crop Type</label>
-    <select  name="cptp" [(ngModel)]="obj.croptype" class="padding_textbox" (click)="onselectcroptype()" >
+    <select  name="cptp" [(ngModel)]="obj.croptype"  class="padding_textbox" (click)="onselectcroptype()" required>
         <option [value]="undefined" selected >Select Crop Type</option>
         <option *ngFor="let type of crop_typelist">{{type}}</option>
       </select><br><br>
-    <!--[value]="undefined" is used to set default option in the drop down list-->
-      <label for="cpname">Crop Name  </label>
-      <select  name="cpname" [(ngModel)]="obj.cropname" class="padding_cropname"  >
+
+      <label for="cpname">Crop Name </label>
+      <select  name="cpname" [(ngModel)]="obj.cropname" [(ngModel)]="sellObj.cropName" class="padding_cropname" required >
         <option [value]="undefined">Select Crop Name</option>
         <option *ngFor="let name of crop_names" >{{name}}</option>
       </select><br><br>
     
-      <label for="fertype">Fertilizer Type  </label>
-      <select  name="fertype" class="padding_fertlizer" [(ngModel)]="obj.fertype" >
+      <label for="fertype">Fertilizer Type </label>
+      <select  name="fertype" class="padding_fertlizer" [(ngModel)]="obj.fertype" [(ngModel)]="sellObj.fertilizer" required>
         <option [value]="undefined" >Select Fertilizer Name</option>
         <option  *ngFor="let name of fertilizer_name" >{{name}}</option>
       </select><br><br>
     
       <label for="qua">Quantity  </label>
-      <input name="qua" type="number" placeholder="Enter Quantity" class="padding_quantity" [(ngModel)]="obj.quantity"><br><br>
+      <input name="qua" type="number" placeholder="Enter Quantity" class="padding_quantity" [(ngModel)]="obj.quantity" [(ngModel)]="sellObj.quantity" max="4999" required><br><br>
     
       <label for="soilph">Soil PH Certificate  </label>
-      <input name="soilph" type="text" placeholder="Enter PH Value" class="padding_ph" [(ngModel)]="obj.phvalue"><br><br>
-    
-      <button class="placebutton"  type="button">Place Request</button>
+      <input name="soilph" type="text" placeholder="Enter PH Value" class="padding_ph" [(ngModel)]="obj.phvalue" [(ngModel)]="sellObj.phVal" required><br><br>
+
+      <label for="endbid">End Bidding Date  </label>
+      <input name="endbid" type="date" class="padding_ph" [(ngModel)]="obj.phvalue" [(ngModel)]="sellObj.expiryDate" required><br><br>
+     
+      <label for="baseFarmerPrice">Base Price (in Rupees)</label>
+      <input name="baseFarmerPrice" type="number" placeholder="Enter base price" class="padding_ph" [(ngModel)]="sellObj.baseFarmerPrice" required><br><br>
+  
+      <button class="placebutton" type="submit">Place Request</button>
       </div>
       </form>
