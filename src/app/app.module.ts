@@ -56,7 +56,7 @@ import { AdminApprovalComponent } from './admin-approval/admin-approval.componen
     AdminDashboardComponent,
     FarmerRegistrationComponent,
     BidderRegistrationComponent,
-    PaymentGatewayComponent
+    PaymentGatewayComponent,
     AdminApprovalComponent
   ],
   imports: [
