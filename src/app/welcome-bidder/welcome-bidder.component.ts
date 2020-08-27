@@ -55,24 +55,27 @@ export class WelcomeBidderComponent implements OnInit
 //         null
 //     ]
 // ]
-  public items: any;
+  public items :[];
 
-  constructor(private router: Router) { }
+  constructor(private bidserve: BidService, private router: Router) { }
 
   bidderName:String;
   currentPrice:number;
   bid = new Bid();
-  bidserve: BidService;
+
   placebid(item: any)
   {
-    this.bid.sellId = item.sellId;
+    this.bid.sellId = item[0];
   }
 
   confirm()
   {
+
     this.bid.currentPrice = this.currentPrice;
     this.bidserve.sendbid(this.bid).subscribe();
+    console.log(this.bid)
     this.ngOnInit();
+    
   }
 
   ngOnInit(): void 
@@ -81,11 +84,14 @@ export class WelcomeBidderComponent implements OnInit
     // {
     //   this.router.navigate(['login-bidder'])
     // }
+
     this.bidderName = sessionStorage.getItem('BidderName');
     this.bid.bEmail = sessionStorage.getItem('BidderEmail');
+
     this.bidserve.getitems().subscribe(data=>{
       this.items=data;
     })
+    console.log()
   }
 
 }
