@@ -29,6 +29,9 @@ import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.compo
 import { FarmerRegistrationComponent } from './farmer-registration/farmer-registration.component';
 import { BidderRegistrationComponent } from './bidder-registration/bidder-registration.component';
 import { AdminApprovalComponent } from './admin-approval/admin-approval.component';
+import { AdminAllFarmersComponent } from './admin-all-farmers/admin-all-farmers.component';
+import { AdminAllBiddersComponent } from './admin-all-bidders/admin-all-bidders.component';
+import { AdminApproveBidsComponent } from './admin-approve-bids/admin-approve-bids.component';
 
 
 
@@ -55,7 +58,10 @@ import { AdminApprovalComponent } from './admin-approval/admin-approval.componen
     AdminDashboardComponent,
     FarmerRegistrationComponent,
     BidderRegistrationComponent,
-    AdminApprovalComponent
+    AdminApprovalComponent,
+    AdminAllFarmersComponent,
+    AdminAllBiddersComponent,
+    AdminApproveBidsComponent
   ],
   imports: [
     HttpClientModule,
