@@ -20,6 +20,7 @@ import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.compo
 import { FarmerRegistrationComponent } from './farmer-registration/farmer-registration.component';
 import { BidderRegistrationComponent } from './bidder-registration/bidder-registration.component';
 import { ContactComponent } from './contact/contact.component';
+import { AdminApprovalComponent } from './admin-approval/admin-approval.component';
 
 
 const routes: Routes = [
@@ -40,6 +41,7 @@ const routes: Routes = [
   {path: 'login-farmer', component: LoginFarmerComponent},
   {path: 'login-bidder', component: LoginBidderComponent},
   {path: 'admin-dash', component: AdminDashboardComponent},
+  {path: 'admin-approve', component: AdminApprovalComponent},
   {path: 'contact', component:ContactComponent},
   {path: 'payment-gateway', component:PaymentGatewayComponent},
   {path: '**', component: NotfoundComponent}

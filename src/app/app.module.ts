@@ -29,6 +29,7 @@ import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.compo
 import { FarmerRegistrationComponent } from './farmer-registration/farmer-registration.component';
 import { BidderRegistrationComponent } from './bidder-registration/bidder-registration.component';
 import { PaymentGatewayComponent } from './payment-gateway/payment-gateway.component';
+import { AdminApprovalComponent } from './admin-approval/admin-approval.component';
 
 
 
@@ -56,6 +57,7 @@ import { PaymentGatewayComponent } from './payment-gateway/payment-gateway.compo
     FarmerRegistrationComponent,
     BidderRegistrationComponent,
     PaymentGatewayComponent
+    AdminApprovalComponent
   ],
   imports: [
     HttpClientModule,
