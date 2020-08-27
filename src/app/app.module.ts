@@ -35,6 +35,7 @@ import { AdminAllFarmersComponent } from './admin-all-farmers/admin-all-farmers.
 import { AdminAllBiddersComponent } from './admin-all-bidders/admin-all-bidders.component';
 import { AdminApproveBidsComponent } from './admin-approve-bids/admin-approve-bids.component';
 import { BidderDashboardComponent } from './bidder-dashboard/bidder-dashboard.component';
+import { BidderHistoryComponent } from './bidder-history/bidder-history.component';
 
 
 
@@ -67,7 +68,8 @@ import { BidderDashboardComponent } from './bidder-dashboard/bidder-dashboard.co
     AdminApproveBidsComponent,
     PaymentGatewayComponent,
     AdminApprovalComponent,
-    BidderDashboardComponent
+    BidderDashboardComponent,
+    BidderHistoryComponent
   ],
   imports: [
     HttpClientModule,

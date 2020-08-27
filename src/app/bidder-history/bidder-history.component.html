@@ -1,0 +1,34 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+ <div class="main">
+  <div class="container">
+   <h1 class="heading">Your transaction history.</h1>
+   <br><br><br>
+   <div class="container1">
+     <div class="table_css">
+       <table class="table table-striped">
+          <thead>
+             <tr>
+                <th>Farmer's Email</th>
+                <th>Crop Name</th>
+                <th>Quantity</th>
+                <th>Your bid price</th>
+                <th>Bid status</th>
+             </tr>
+          </thead>
+          <tbody>
+             <tr *ngFor="let item of items">
+                <td>{{ item[0] }}</td>
+                <td>{{ item[1] }}</td>
+                <td>{{ item[2] }}</td>
+                <td>{{ item[3] }}</td>
+                <td>{{ item[4] }}</td>
+             </tr>
+          </tbody>
+       </table>
+ </div>
+ </div>
