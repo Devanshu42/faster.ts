@@ -1,3 +1,4 @@
+import { PaymentGatewayComponent } from './payment-gateway/payment-gateway.component';
 import { NgModule, Component } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
@@ -40,6 +41,7 @@ const routes: Routes = [
   {path: 'login-bidder', component: LoginBidderComponent},
   {path: 'admin-dash', component: AdminDashboardComponent},
   {path: 'contact', component:ContactComponent},
+  {path: 'payment-gateway', component:PaymentGatewayComponent},
   {path: '**', component: NotfoundComponent}
 
 ];

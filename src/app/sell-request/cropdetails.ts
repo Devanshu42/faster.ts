@@ -1,6 +1,6 @@
 export class cropdetails
 {
-    croptype:String;
+    croptype:string;
     cropname:String;
     fertype:String;
     quantity:number;

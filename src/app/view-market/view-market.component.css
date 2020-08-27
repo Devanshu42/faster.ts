@@ -1,4 +1,4 @@
-.body{
+/* .body{
     padding-top: 5%;
     padding-right: 15%;
     padding-left: 15%;
@@ -12,9 +12,11 @@
 .container1{
     padding-top: 5%;
     padding-left: 5%;
+    padding-bottom: 5%;
     border:2px solid black;
     height: 100%;
     margin-bottom: 200px;
+    
 }
 .u1{
     padding-left: 10px;
@@ -33,14 +35,24 @@
     padding-bottom: 3%;
 }
 table{
-    margin-top: 4%;
     border-collapse: collapse;
     width: 80%;
     margin-left: 6%;
 }
 table,th,td{
     border:1px solid black;
+    font-size: large;
+    text-align: center;
 }
 .p2{
     margin-top: 8%;
+} */
+
+.main{
+    padding-bottom: 5%;
+    background-color: #c9c9c9;
+}
+.heading{
+    text-align: center;
+    margin-top: 5%;
 }
