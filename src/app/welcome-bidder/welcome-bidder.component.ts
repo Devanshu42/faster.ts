@@ -19,18 +19,18 @@ export class WelcomeBidderComponent implements OnInit
   constructor(private router: Router, private refresh: AppComponent) { }
 
   bidderName:String;
-  bidamount:number;
+  currentPrice:number;
   bid = new Bid();
 
   placebid(item: any)
   {
-    this.bid.sellid = item.sellid;
+    this.bid.sellId = item.sellid;
     console.log(item.sellid, 'okay');
   }
 
   confirm()
   {
-    console.log('sellid:', this.bid.sellid, ' email: ', this.bid.bEmail, ' amount: ', this.bidamount) 
+    console.log('sellid:', this.bid.sellId, ' email: ', this.bid.bEmail, ' amount: ', this.currentPrice) 
   }
 
   ngOnInit(): void 

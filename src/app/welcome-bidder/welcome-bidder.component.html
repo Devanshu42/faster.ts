@@ -31,7 +31,7 @@
                </tbody>
          </table>
 
-         <input *ngIf = "iwillhide" class = "form-control" name="amount" type="number" [(ngModel)] = "bidamount" placeholder="Enter Bid Amount" >
+         <input *ngIf = "iwillhide" class = "form-control" name="amount" type="number" [(ngModel)] = "currentPrice" placeholder="Enter Bid Amount" >
          <button *ngIf = "iwillhide" class= "btn btn-danger"  (click)="confirm()">Confirm</button>
 
       

@@ -1,7 +1,7 @@
 export class Bid
 {
     bEmail: string;
-    bidamount: number;
-    sellid:number
+    currentPrice: number;
+    sellId:number
     constructor(){};
 }
