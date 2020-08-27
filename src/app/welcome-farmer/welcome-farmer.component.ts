@@ -15,12 +15,7 @@ farmerName:String;
     this.farmerName=sessionStorage.getItem('FarmerName');
     this.refresh.ngOnInit();
   }
-  logout()
-  {
-    sessionStorage.clear()
-        this.router.navigate(['/']);
-  
-  }
+
 
   constructor(private router: Router, private refresh: AppComponent) {
     

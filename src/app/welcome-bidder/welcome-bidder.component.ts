@@ -1,5 +1,6 @@
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-welcome-bidder',
@@ -11,18 +12,12 @@ export class WelcomeBidderComponent implements OnInit {
   items=[{croptype:"Food Crop",cropname:"Wheat",baseprice:1000,currentbid:1500},
        {croptype:"Food Crop",cropname:"Rice",baseprice:2000,currentbid:2100},
        {croptype:"Cash Crop",cropname:"Sugarcane",baseprice:3500,currentbid:3600}];
-  constructor(private router: Router) { }
+  constructor(private router: Router, private refresh: AppComponent) { }
   bidderName:String;
 
   ngOnInit(): void {
     this.bidderName=sessionStorage.getItem('BidderName');
-
-  }
-  
-  logout()
-  {
-    sessionStorage.clear()
-    this.router.navigate(['/']);
+    this.refresh.ngOnInit();
   }
 
 }

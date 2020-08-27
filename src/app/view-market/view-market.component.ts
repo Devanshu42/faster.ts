@@ -10,7 +10,7 @@ import { Observable } from 'rxjs';
 })
 export class ViewMarketComponent implements OnInit {
 email:string=sessionStorage.getItem('FarmerEmail');
-items: Observable<sellhistory[]>;
+public items =[];
 
   constructor(private sellreq:SellReqhistoryService) { }
 
