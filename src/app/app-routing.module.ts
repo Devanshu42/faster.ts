@@ -21,8 +21,6 @@ import { FarmerRegistrationComponent } from './farmer-registration/farmer-regist
 import { BidderRegistrationComponent } from './bidder-registration/bidder-registration.component';
 import { ContactComponent } from './contact/contact.component';
 import { AdminApprovalComponent } from './admin-approval/admin-approval.component';
-import { AdminAllBiddersComponent } from './admin-all-bidders/admin-all-bidders.component';
-import { AdminAllFarmersComponent } from './admin-all-farmers/admin-all-farmers.component';
 import { AdminApproveBidsComponent } from './admin-approve-bids/admin-approve-bids.component';
 import { BidderDashboardComponent } from './bidder-dashboard/bidder-dashboard.component';
 import { BidderHistoryComponent } from './bidder-history/bidder-history.component';
@@ -48,8 +46,6 @@ const routes: Routes = [
   {path: 'login-bidder', component: LoginBidderComponent},
   {path: 'admin-dash', component: AdminDashboardComponent},
   {path: 'admin-approve', component: AdminApprovalComponent},
-  {path: 'all-bidders', component: AdminAllBiddersComponent},
-  {path: 'all-farmers', component: AdminAllFarmersComponent},
   {path: 'admin-market', component: AdminApproveBidsComponent},
   {path: 'contact', component:ContactComponent},
   {path: 'payment-gateway', component:PaymentGatewayComponent},

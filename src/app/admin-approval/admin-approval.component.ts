@@ -10,24 +10,22 @@ export class AdminApprovalComponent implements OnInit {
 
   constructor(private adminapprove: ApprovalService) { }
 
-  public items =[['Horti', 'Rice', '02-11-2020',333, 0],['Horti', 'Whey', '02-4-2020',554, 0],['Mori', 'Weed3', '02-131-2020',4533, 0]];
-
+  public items = []
   approve(item: any[])
   {
-    console.log("approved", item[3]);
-    // this.adminapprove.sendapproval(JSON.stringify(item[3])).subscribe()
-    item[4] = 'Approved!';
+    this.adminapprove.sendapproval(JSON.stringify(item[0])).subscribe();
+    item[6] = 'Approved!';
   }
 
   reject(item: any[])
   {
-    console.log("rejected ", item[1]);
-    // this.message = 'Rejected!!';
-
-    item[4] = 'Rejected!!'
+    this.adminapprove.sendrejection(JSON.stringify(item[0])).subscribe();
+    item[6]= 'Rejected!!';
   }
 
-  ngOnInit(): void {
+  ngOnInit(): void 
+  {
+    this.adminapprove.getallrequests().subscribe(data=> this.items=data)
   }
 
 }

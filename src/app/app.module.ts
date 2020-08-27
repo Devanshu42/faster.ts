@@ -31,8 +31,6 @@ import { FarmerRegistrationComponent } from './farmer-registration/farmer-regist
 import { BidderRegistrationComponent } from './bidder-registration/bidder-registration.component';
 import { PaymentGatewayComponent } from './payment-gateway/payment-gateway.component';
 import { AdminApprovalComponent } from './admin-approval/admin-approval.component';
-import { AdminAllFarmersComponent } from './admin-all-farmers/admin-all-farmers.component';
-import { AdminAllBiddersComponent } from './admin-all-bidders/admin-all-bidders.component';
 import { AdminApproveBidsComponent } from './admin-approve-bids/admin-approve-bids.component';
 import { BidderDashboardComponent } from './bidder-dashboard/bidder-dashboard.component';
 import { BidderHistoryComponent } from './bidder-history/bidder-history.component';
@@ -63,8 +61,6 @@ import { BidderHistoryComponent } from './bidder-history/bidder-history.componen
     FarmerRegistrationComponent,
     BidderRegistrationComponent,
     AdminApprovalComponent,
-    AdminAllFarmersComponent,
-    AdminAllBiddersComponent,
     AdminApproveBidsComponent,
     PaymentGatewayComponent,
     AdminApprovalComponent,

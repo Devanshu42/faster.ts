@@ -17,6 +17,7 @@
                <th>Crop Type</th>
                <th>Crop Name</th>
                <th>Expiry</th>
+               <th>Quantity</th>
                <th>Base Price</th>
                <th>Approval</th>
                <th>Rejection</th>
@@ -25,13 +26,14 @@
          </thead>
          <tbody>
             <tr *ngFor="let item of items">
-               <td>{{ item[0] }}</td>
+               <td>{{ item[5] }}</td>
                <td>{{ item[1] }}</td>
                <td>{{ item[2] }}</td>
                <td>{{ item[3] }}</td>
+               <td>{{ item[4] }}</td>
               <td><button type="button" (click)="approve(item)"class="btn btn-success">Approve</button></td>
               <td><button type="button" (click)="reject(item)"class="btn btn-danger">Reject</button></td>
-              <td style="width: 6em; text-align: center;" >{{item[4]}}</td>
+              <td style="width: 6em; text-align: center;" >{{item[6]}}</td>
             </tr>
          </tbody>
       </table>
