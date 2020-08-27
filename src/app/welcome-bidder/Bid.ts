@@ -2,6 +2,7 @@ export class Bid
 {
     bEmail: string;
     currentPrice: number;
-    sellId:number
+    sellId:number;
+    bidDoneToken=0;
     constructor(){};
 }

@@ -13,26 +13,28 @@
             <table class="table table-striped">
                <thead>
                   <tr>
-                     <th>Crop Type</th>
+                     <th>Quantity (Kg.)</th>
                      <th>Crop Name</th>
-                     <th>Base Price</th>
-                     <th>Current Bid</th>
+                     <th>Base Price (Rs.)</th>
+                     <th>Bid Expiry Date</th>
+                     <th>Current Bid Price (Rs.)</th>
                      <th>Action</th>
                   </tr>
                </thead>
                <tbody>
                   <tr *ngFor="let item of items">
-                     <td>{{ item.croptype }}</td>
-                     <td>{{ item.cropname }}</td>
-                     <td>{{ item.baseprice }}</td>
-                     <td>{{ item.currentbid }}</td>
+                     <td>{{ item[1] }}</td>
+                     <td>{{ item[2] }}</td>
+                     <td>{{ item[3] }}</td>
+                     <td style="width: 12em;">{{ item[4] }}</td>
+                     <td style="text-align: center; width: 14em; padding-right: 3em;">{{ item[5] }}</td>
                      <td><button class="btn btn-info" (click) = "placebid(item);iwillhide=true"> Place Bid </button></td>
                   </tr>
                </tbody>
          </table>
 
-         <input *ngIf = "iwillhide" class = "form-control" name="amount" type="number" [(ngModel)] = "currentPrice" placeholder="Enter Bid Amount" >
-         <button *ngIf = "iwillhide" class= "btn btn-danger"  (click)="confirm()">Confirm</button>
+         <input *ngIf = "iwillhide" class = "form-control" style="margin: 1em 0;" name="amount" type="number" [(ngModel)] = "currentPrice" placeholder="Enter Bid Amount" >
+         <button *ngIf = "iwillhide" class= "btn btn-danger" style="margin-left: 27em; width: 12em; font-size: larger;" (click)="confirm()">Confirm</button>
 
       
       </div>

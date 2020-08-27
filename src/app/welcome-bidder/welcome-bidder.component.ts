@@ -1,7 +1,7 @@
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
-import { AppComponent } from '../app.component';
 import { Bid } from './Bid';
+import { BidService } from './bid.service';
 
 
 @Component({
@@ -12,25 +12,67 @@ import { Bid } from './Bid';
 export class WelcomeBidderComponent implements OnInit 
 {
   iwillhide=false
-  items=[{sellid: 1, croptype:"Food Crop", cropname:"Wheat", baseprice:1000, currentbid:1500},
-       {sellid: 2, croptype:"Food Crop", cropname:"Rice", baseprice:2000, currentbid:2100},
-       {sellid: 3, croptype:"Cash Crop", cropname:"Sugarcane", baseprice:3500, currentbid:3600}];
 
-  constructor(private router: Router, private refresh: AppComponent) { }
+//   public itemzz = [
+//     [
+//         4,
+//         5.0,
+//         "Sugarcane",
+//         5000.0,
+//         "08-05-1997",
+//         55.0
+//     ],
+//     [
+//         2,
+//         2.0,
+//         "Tamatar",
+//         6923.0,
+//         "04-12-2020",
+//         70.0
+//     ],
+//     [
+//         6,
+//         50.0,
+//         "OilSeeds",
+//         10000.0,
+//         "04-12-2020",
+//         null
+//     ],
+//     [
+//         5,
+//         50.0,
+//         "Apple",
+//         5000.0,
+//         "04-12-2020",
+//         null
+//     ],
+//     [
+//         3,
+//         10.0,
+//         "Rice",
+//         5100.0,
+//         "04-12-2020",
+//         null
+//     ]
+// ]
+  public items: any;
+
+  constructor(private router: Router) { }
 
   bidderName:String;
   currentPrice:number;
   bid = new Bid();
-
+  bidserve: BidService;
   placebid(item: any)
   {
-    this.bid.sellId = item.sellid;
-    console.log(item.sellid, 'okay');
+    this.bid.sellId = item.sellId;
   }
 
   confirm()
   {
-    console.log('sellid:', this.bid.sellId, ' email: ', this.bid.bEmail, ' amount: ', this.currentPrice) 
+    this.bid.currentPrice = this.currentPrice;
+    this.bidserve.sendbid(this.bid).subscribe();
+    this.ngOnInit();
   }
 
   ngOnInit(): void 
@@ -39,10 +81,11 @@ export class WelcomeBidderComponent implements OnInit
     // {
     //   this.router.navigate(['login-bidder'])
     // }
-    this.bidderName=sessionStorage.getItem('BidderName');
-    this.refresh.ngOnInit();
-    
+    this.bidderName = sessionStorage.getItem('BidderName');
     this.bid.bEmail = sessionStorage.getItem('BidderEmail');
+    this.bidserve.getitems().subscribe(data=>{
+      this.items=data;
+    })
   }
 
 }
