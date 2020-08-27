@@ -25,6 +25,7 @@ import { AdminAllBiddersComponent } from './admin-all-bidders/admin-all-bidders.
 import { AdminAllFarmersComponent } from './admin-all-farmers/admin-all-farmers.component';
 import { AdminApproveBidsComponent } from './admin-approve-bids/admin-approve-bids.component';
 import { BidderDashboardComponent } from './bidder-dashboard/bidder-dashboard.component';
+import { BidderHistoryComponent } from './bidder-history/bidder-history.component';
 
 
 const routes: Routes = [
@@ -52,6 +53,7 @@ const routes: Routes = [
   {path: 'admin-market', component: AdminApproveBidsComponent},
   {path: 'contact', component:ContactComponent},
   {path: 'payment-gateway', component:PaymentGatewayComponent},
+  {path: 'bidder-history', component:BidderHistoryComponent},
   {path: '**', component: NotfoundComponent}
 
 ];
