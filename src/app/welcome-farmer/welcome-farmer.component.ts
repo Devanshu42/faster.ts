@@ -14,6 +14,10 @@ farmerName:String;
   ngOnInit(): void {
     this.farmerName=sessionStorage.getItem('FarmerName');
     this.refresh.ngOnInit();
+    if (this.farmerName==null)
+    {
+      this.router.navigate(['login-farmer']);
+    }
   }
 
 

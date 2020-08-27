@@ -1,30 +1,40 @@
-<div class="table_css">
-   <h1>Hi, {{bidderName}}! Wecome</h1>
-    <table>
-       <thead>
-          <tr>
-             <th>Crop Type</th>
-             <th>Crop Name</th>
-             <th>Base Price</th>
-             <th>Current Bid</th>
-             <th>Action</th>
-          </tr>
-       </thead>
-       <tbody>
-          <tr *ngFor="let item of items">
-             <td>{{ item.croptype }}</td>
-             <td>{{ item.cropname }}</td>
-             <td>{{ item.baseprice }}</td>
-             <td>{{ item.currentbid}}</td>
-             <td><button class="placebid" (click)="iwillhide=true">Place Bid</button></td>
-          </tr>
-       </tbody>
-    </table>
-    <div *ngIf="iwillhide">
-    <div class="bidamount">
-        <label for="amt">Bid Amount</label>
-        <input name="amt" type="number" placeholder="Enter Bid Amount"><br>
-    </div>
-        <button class="buttoncss" (click)="iwillhide=false">Confirm</button>
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ </head>
+
+ <div class="main">
+   <div class="container">
+      <div class="container1">
+         <div class="table_css">
+            <h1>Hi, {{bidderName}}! Welcome. Here are the bids currently in the market.</h1>
+            <table class="table table-striped">
+               <thead>
+                  <tr>
+                     <th>Crop Type</th>
+                     <th>Crop Name</th>
+                     <th>Base Price</th>
+                     <th>Current Bid</th>
+                     <th>Action</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr *ngFor="let item of items">
+                     <td>{{ item.croptype }}</td>
+                     <td>{{ item.cropname }}</td>
+                     <td>{{ item.baseprice }}</td>
+                     <td>{{ item.currentbid }}</td>
+                     <td><button class="btn btn-info" (click) = "placebid(item);iwillhide=true"> Place Bid </button></td>
+                  </tr>
+               </tbody>
+         </table>
+
+         <input *ngIf = "iwillhide" class = "form-control" name="amount" type="number" [(ngModel)] = "bidamount" placeholder="Enter Bid Amount" >
+         <button *ngIf = "iwillhide" class= "btn btn-danger"  (click)="confirm()">Confirm</button>
+
+      
       </div>
-    </div>
+   </div>
+</div>

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {ThemePalette} from '@angular/material/core';
 import { ApprovalService } from './approval.service';
 
 @Component({

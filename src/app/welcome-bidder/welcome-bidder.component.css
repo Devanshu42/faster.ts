@@ -1,4 +1,4 @@
-table{
+/* table{
     margin-top: 4%;
     border-collapse: collapse;
     width: 80%;
@@ -33,4 +33,9 @@ table,th,td{
 }
 .placebid{
     text-align: center;
+} */
+
+.main
+{
+    margin: 5% 10% 15%;
 }
