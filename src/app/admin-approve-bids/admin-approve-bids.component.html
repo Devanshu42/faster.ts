@@ -1,1 +1,43 @@
-<p>admin-approve-bids works!</p>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <div class="main">
+  <div class="container">
+    <h1 style="text-align: center;"><b>Welcome, Team FarmStead</b></h1>
+    <h3 style="text-align: center;">Here are the sell requests waiting for your approval.</h3>
+    <br><br><br>
+    <div class="container1">
+      <div class="table_css">
+        <table class="table table-striped">
+           <thead>
+              <tr>
+                 <th>Farmer Email</th>
+                 <th>Crop Name</th>
+                 <th>Current Highest Bid</th>
+                 <th>Bidder Email</th>
+                 <!-- <th>Quantity</th>
+                 <th>Base Price</th> -->
+                 <th>Approval</th>
+                 <!-- <th>Rejection</th>
+                 <th style="text-align: center;">Status</th> -->
+              </tr>
+           </thead>
+           <tbody>
+              <tr *ngFor="let item of items">
+                 <td>{{ item[1] }}</td>
+                 <td>{{ item[3] }}</td>
+                 <td>{{ item[4] }}</td>
+                 <td>{{ item[2] }}</td>
+                 <!-- <td>{{ item[3] }}</td>
+                 <td>{{ item[4] }}</td> -->
+                <td><button type="button" (click)="approve(item)"class="btn btn-success">Approve</button></td>
+                <!-- <td><button type="button" (click)="reject(item)"class="btn btn-danger">Reject</button></td>
+                <td style="width: 6em; text-align: center;" >{{item[6]}}</td> -->
+              </tr>
+           </tbody>
+        </table>
+  </div>
+  </div>
