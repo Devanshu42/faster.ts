@@ -3,9 +3,11 @@ table{
     border-collapse: collapse;
     width: 80%;
     margin-left: 6%;
+    text-align: center;
 }
 table,th,td{
     border:1px solid black;
+    padding:0.5%;
 }
 .bidamount{
     margin-top: 2%;
@@ -28,4 +30,7 @@ table,th,td{
   font-family: Verdana;
   letter-spacing: 1px;
   background-image: linear-gradient(to right, cornflowerblue,purple);
+}
+.placebid{
+    text-align: center;
 }

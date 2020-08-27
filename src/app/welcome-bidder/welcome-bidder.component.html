@@ -7,6 +7,7 @@
              <th>Crop Name</th>
              <th>Base Price</th>
              <th>Current Bid</th>
+             <th>Action</th>
           </tr>
        </thead>
        <tbody>
@@ -15,12 +16,15 @@
              <td>{{ item.cropname }}</td>
              <td>{{ item.baseprice }}</td>
              <td>{{ item.currentbid}}</td>
+             <td><button class="placebid" (click)="iwillhide=true">Place Bid</button></td>
           </tr>
        </tbody>
     </table>
+    <div *ngIf="iwillhide">
     <div class="bidamount">
         <label for="amt">Bid Amount</label>
         <input name="amt" type="number" placeholder="Enter Bid Amount"><br>
     </div>
-        <button class="buttoncss">Confirm</button>
+        <button class="buttoncss" (click)="iwillhide=false">Confirm</button>
+      </div>
     </div>
